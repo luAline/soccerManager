@@ -212,6 +212,8 @@
                 <g:textField name="observacao" class="autogrow form-control" value="${alunoInstance?.observacao}"/>
             </div>
 
+            fernando
+
 
 
             <div class="form-group col-md-8">
