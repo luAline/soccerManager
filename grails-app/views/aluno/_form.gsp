@@ -81,7 +81,7 @@
     </div>
     <div class="row">
         <div class="box-content">
-            <div class="form-group col-md-3">
+            <div class="form-group col-md-4">
                 <label for="responsavel">
                     <g:message code="empresa.responsavel" default="Responsavel" />
 
@@ -120,19 +120,20 @@
     </div>
     <div class="row">
         <div class="box-content">
-            <div class="form-group col-md-1">
+            <div class="form-group col-md-2">
                 <label for="valorMensalidade">
                     <g:message code="aluno.valorMensalidade" default="Valor Mensalidade" />
                     <span class="required-indicator">*</span>
                 </label>
                 <g:textField name="valorMensalidade" class="form-control" value="${fieldValue(bean: alunoInstance, field: 'valorMensalidade')}" required=""/>
             </div>
-            <div class="form-group col-md-2">
+
+            <div class="form-group col-md-3">
                 <label for="vencimentoMensalidade">
                     <g:message code="aluno.vencimentoMensalidade" default="Vencimento Mensalidade" />
-
+                    <span class="required-indicator">*</span>
                 </label>
-                <g:datePicker name="vencimentoMensalidade" precision="day"  value="${alunoInstance?.vencimentoMensalidade}" default="none" noSelection="['': '']" />
+                <g:textField name="vencimentoMensalidade" class="form-control" value="${alunoInstance?.vencimentoMensalidade}" required=""/>
             </div>
         </div>
     </div>
@@ -181,7 +182,7 @@
                 <g:textField name="logradouro" class="form-control" value="${alunoInstance?.logradouro}"/>
             </div>
 
-            <div class="form-group col-md-8">
+            <div class="form-group col-md-1">
                 <label for="numero">
                     <g:message code="endereco.numero" default="Numero" />
 
@@ -189,73 +190,68 @@
                 <g:textField name="numero" class="form-control" value="${alunoInstance?.numero}"/>
             </div>
 
-
-            <div class="form-group col-md-8">
-                <label for="alergia">
-                    <g:message code="aluno.alergia" default="Alergia" />
-
-                </label>
-                <g:textArea name="alergia" class="autogrow form-control" value="${alunoInstance?.alergia}"/>
-            </div>
-            <div class="form-group col-md-8">
-                <label for="deficiencia">
-                    <g:message code="aluno.deficiencia" default="Deficiencia" />
-
-                </label>
-                <g:textField name="deficiencia" class="autogrow form-control" value="${alunoInstance?.deficiencia}"/>
-            </div>
-            <div class="form-group col-md-8">
-                <label for="observacao">
-                    <g:message code="soccerManager.observacao" default="Observacao" />
-
-                </label>
-                <g:textField name="observacao" class="autogrow form-control" value="${alunoInstance?.observacao}"/>
-            </div>
-
-            fernando  fork
-            luciana tentativa
-
-
-            <div class="form-group col-md-8">
-                <label for="complemento">
-                    <g:message code="endereco.complemento" default="Complemento" />
-
-                </label>
-                <g:textField name="complemento" class="form-control" value="${alunoInstance?.complemento}"/>
-            </div>
-            <div class="form-group col-md-8">
-                <label for="bairro">
-                    <g:message code="endereco.bairro" default="Bairro" />
-
-                </label>
-                <g:textField name="bairro" class="form-control" value="${alunoInstance?.bairro}"/>
-            </div>
-            <div class="form-group col-md-8">
+            <div class="form-group col-md-3">
                 <label for="cep">
                     <g:message code="endereco.cep" default="Cep" />
 
                 </label>
                 <g:textField name="cep" class="form-control" value="${alunoInstance?.cep}"/>
             </div>
-            <div class="form-group col-md-8">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="box-content">
+            <div class="form-group col-md-7">
+                <label for="complemento">
+                    <g:message code="endereco.complemento" default="Complemento" />
+
+                </label>
+                <g:textField name="complemento" class="form-control" value="${alunoInstance?.complemento}"/>
+            </div>
+
+            <div class="form-group col-md-3">
+                <label for="bairro">
+                    <g:message code="endereco.bairro" default="Bairro" />
+
+                </label>
+                <g:textField name="bairro" class="form-control" value="${alunoInstance?.bairro}"/>
+            </div>
+
+            <div class="form-group col-md-2">
                 <label for="cidade">
                     <g:message code="cidade.label" default="Cidade" />
 
                 </label>
                 <g:select id="cidade" name="cidade" from="${br.edu.luciana.soccerManager.Cidade.list()}" optionKey="id" value="${alunoInstance?.cidade?.id}" class="form-control many-to-one" noSelection="['null': 'TODOS']"/>
             </div>
-            <div class="form-group col-md-8"></div>
         </div>
     </div>
-
+    <hr>
 
     <div class="row">
         <div class="box-content">
-            <div class="form-group col-md-8"></div>
-            <div class="form-group col-md-8"></div>
-            <div class="form-group col-md-8"></div>
-            <div class="form-group col-md-8"></div>
-            <div class="form-group col-md-8"></div>
+            <div class="form-group col-md-4">
+                <label for="alergia">
+                    <g:message code="aluno.alergia" default="Alergia" />
+
+                </label>
+                <g:textArea name="alergia" class="autogrow form-control" value="${alunoInstance?.alergia}"/>
+            </div>
+            <div class="form-group col-md-4">
+                <label for="deficiencia">
+                    <g:message code="aluno.deficiencia" default="Deficiencia" />
+
+                </label>
+                <g:textArea name="deficiencia" class="autogrow form-control" value="${alunoInstance?.deficiencia}"/>
+            </div>
+            <div class="form-group col-md-4">
+                <label for="observacao">
+                    <g:message code="soccerManager.observacao" default="Observacao" />
+
+                </label>
+                <g:textArea name="observacao" class="autogrow form-control" value="${alunoInstance?.observacao}"/>
+            </div>
         </div>
     </div>
 </div>

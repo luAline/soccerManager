@@ -17,7 +17,7 @@ class Aluno {
     String parentesco
     String telefone
     double valorMensalidade
-    Date vencimentoMensalidade
+    int vencimentoMensalidade
     Date dataCadastro
     double altura
     double peso
@@ -59,8 +59,16 @@ class Aluno {
         deficiencia = s?.toUpperCase()
     }
 
-    String setObservacao( String s ){
-        observacao = s?.toUpperCase()
+    String setLogradouro( String s ){
+        logradouro = s?.toUpperCase()
+    }
+
+    String setComplemento( String s ){
+        complemento = s?.toUpperCase()
+    }
+
+    String setBairro( String s ){
+        bairro = s?.toUpperCase()
     }
 
 
