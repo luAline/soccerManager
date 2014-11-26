@@ -101,4 +101,12 @@ class TimeController {
             '*' { render status: NOT_FOUND }
         }
     }
+
+    def categoria(){
+        println("categoria")
+        def listaCategoriaList = Categoria.list()
+
+        println("lista: "+listaCategoriaList)
+        return [listaCategoriaList:listaCategoriaList]
+    }
 }

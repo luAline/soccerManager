@@ -7,6 +7,10 @@ class Time {
     Categoria categoria
     String observacao
 
+    String setObservacao( String s ){
+        observacao = s?.toUpperCase()
+    }
+
     static constraints = {
         numeroCamisa(nullable: true, blank: true)
         aluno()
