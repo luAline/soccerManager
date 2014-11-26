@@ -1,5 +1,10 @@
 
 <%@ page import="br.edu.luciana.soccerManager.Time" %>
+
+<g:each in="${alunoLista}" var="timeInstance">
+   Aluno: ${timeInstance?.nome}
+</g:each>
+
 <!DOCTYPE html>
 <html>
 	<head>
@@ -31,15 +36,7 @@
 					
 				</li>
 				</g:if>
-			
-				<g:if test="${timeInstance?.aluno}">
-				<li class="fieldcontain">
-					<span id="aluno-label" class="property-label"><g:message code="time.aluno.label" default="Aluno" /></span>
-					
-						<span class="property-value" aria-labelledby="aluno-label"><g:link controller="aluno" action="show" id="${timeInstance?.aluno?.id}">${timeInstance?.aluno?.encodeAsHTML()}</g:link></span>
-					
-				</li>
-				</g:if>
+
 			
 				<g:if test="${timeInstance?.categoria}">
 				<li class="fieldcontain">

@@ -1,5 +1,10 @@
 <%@ page import="br.edu.luciana.soccerManager.Time" %>
 
+<g:each in="${alunoLista}" var="timeInstance">
+    <div class="form-group col-md-2">
+        <g:link class="create" action="create" controller="time" id="${timeInstance?.id}">${timeInstance?.nome}</g:link>
+    </div>
+</g:each>
 
 
 <div class="fieldcontain ${hasErrors(bean: timeInstance, field: 'numeroCamisa', 'error')} required">

@@ -2,22 +2,36 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="397ca0e3-d8e0-4ee8-ad66-b32674269adc" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grails-app/views/time/categoria.gsp" />
-      <change type="DELETED" beforePath="C:\TCC\IntelliJ\SoccerManager\web-app\css\bootstrap-spacelab.min.css" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/domain/br/edu/luciana/soccerManager/Time.groovy" afterPath="$PROJECT_DIR$/grails-app/domain/br/edu/luciana/soccerManager/Time.groovy" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grails-app/domain/br/edu/luciana/soccerManager/Semana.groovy" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grails-app/controllers/br/edu/luciana/soccerManager/SemanaController.groovy" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grails-app/views/semana/_form.gsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grails-app/views/semana/create.gsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grails-app/views/semana/edit.gsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grails-app/views/aluno/historico.gsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grails-app/views/semana/index.gsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grails-app/views/aluno/jogos.gsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grails-app/views/aluno/mensalidadeLista.gsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grails-app/views/semana/show.gsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/controllers/br/edu/luciana/soccerManager/AlunoController.groovy" afterPath="$PROJECT_DIR$/grails-app/controllers/br/edu/luciana/soccerManager/AlunoController.groovy" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/controllers/br/edu/luciana/soccerManager/TimeController.groovy" afterPath="$PROJECT_DIR$/grails-app/controllers/br/edu/luciana/soccerManager/TimeController.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/jogo/create.gsp" afterPath="$PROJECT_DIR$/grails-app/views/jogo/create.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/jogo/edit.gsp" afterPath="$PROJECT_DIR$/grails-app/views/jogo/edit.gsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/time/_form.gsp" afterPath="$PROJECT_DIR$/grails-app/views/time/_form.gsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/time/categoria.gsp" afterPath="$PROJECT_DIR$/grails-app/views/time/categoria.gsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/migrations/changelog.groovy" afterPath="$PROJECT_DIR$/grails-app/migrations/changelog.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/time/create.gsp" afterPath="$PROJECT_DIR$/grails-app/views/time/create.gsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/categoria/index.gsp" afterPath="$PROJECT_DIR$/grails-app/views/categoria/index.gsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/time/index.gsp" afterPath="$PROJECT_DIR$/grails-app/views/time/index.gsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/i18n/messages_pt_BR.properties" afterPath="$PROJECT_DIR$/grails-app/i18n/messages_pt_BR.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/aluno/show.gsp" afterPath="$PROJECT_DIR$/grails-app/views/aluno/show.gsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/time/show.gsp" afterPath="$PROJECT_DIR$/grails-app/views/time/show.gsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="SoccerManager.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$USER_HOME$/.grails/" />
-    <file path="/messages_pt_BR.properties" changelist="397ca0e3-d8e0-4ee8-ad66-b32674269adc" time="1416885199819" ignored="false" />
-    <file path="/main.gsp" changelist="397ca0e3-d8e0-4ee8-ad66-b32674269adc" time="1416444013002" ignored="false" />
-    <file path="/Dummy.txt" changelist="397ca0e3-d8e0-4ee8-ad66-b32674269adc" time="1416966926993" ignored="false" />
-    <file path="/a.dummy" changelist="397ca0e3-d8e0-4ee8-ad66-b32674269adc" time="1416956610429" ignored="false" />
+    <file path="/messages_pt_BR.properties" changelist="397ca0e3-d8e0-4ee8-ad66-b32674269adc" time="1417007020540" ignored="false" />
+    <file path="/main.gsp" changelist="397ca0e3-d8e0-4ee8-ad66-b32674269adc" time="1417008861670" ignored="false" />
+    <file path="/Dummy.txt" changelist="397ca0e3-d8e0-4ee8-ad66-b32674269adc" time="1417006866564" ignored="false" />
+    <file path="/a.dummy" changelist="397ca0e3-d8e0-4ee8-ad66-b32674269adc" time="1417006859242" ignored="false" />
     <file path="/Login.groovy" changelist="397ca0e3-d8e0-4ee8-ad66-b32674269adc" time="1412825436664" ignored="false" />
     <file path="$PROJECT_DIR$/test/unit/br/edu/luciana/soccerManager/LoginControllerSpec.groovy" changelist="397ca0e3-d8e0-4ee8-ad66-b32674269adc" time="1412825494944" ignored="false" />
     <file path="/LoginController.groovy" changelist="397ca0e3-d8e0-4ee8-ad66-b32674269adc" time="1412825680631" ignored="false" />
@@ -27,12 +41,12 @@
     <file path="/SecurityFilters" changelist="397ca0e3-d8e0-4ee8-ad66-b32674269adc" time="1413378871818" ignored="false" />
     <file path="$PROJECT_DIR$/test/unit/br/edu/luciana/soccerManager/PaisControllerSpec.groovy" changelist="397ca0e3-d8e0-4ee8-ad66-b32674269adc" time="1413433473242" ignored="false" />
     <file path="/MenuController.groovy" changelist="397ca0e3-d8e0-4ee8-ad66-b32674269adc" time="1413629081610" ignored="false" />
-    <file path="/index.gsp" changelist="397ca0e3-d8e0-4ee8-ad66-b32674269adc" time="1416953581398" ignored="false" />
+    <file path="/index.gsp" changelist="397ca0e3-d8e0-4ee8-ad66-b32674269adc" time="1416969905879" ignored="false" />
     <file path="$USER_HOME$/.IntelliJIdea12/config/options/security.xml" changelist="397ca0e3-d8e0-4ee8-ad66-b32674269adc" time="1413643592248" ignored="false" />
     <file path="$USER_HOME$/.IntelliJIdea12/config/options/vcs.xml" changelist="397ca0e3-d8e0-4ee8-ad66-b32674269adc" time="1413645612746" ignored="false" />
     <file path="$USER_HOME$/.IntelliJIdea12/config/options/ui.lnf.xml" changelist="397ca0e3-d8e0-4ee8-ad66-b32674269adc" time="1413644429470" ignored="false" />
     <file path="/menuLateral.gsp" changelist="397ca0e3-d8e0-4ee8-ad66-b32674269adc" time="1413929002958" ignored="false" />
-    <file path="/_form.gsp" changelist="397ca0e3-d8e0-4ee8-ad66-b32674269adc" time="1416885885759" ignored="false" />
+    <file path="/_form.gsp" changelist="397ca0e3-d8e0-4ee8-ad66-b32674269adc" time="1416970506158" ignored="false" />
     <file path="$PROJECT_DIR$/test/unit/br/edu/luciana/soccerManager/UsuarioControllerSpec.groovy" changelist="397ca0e3-d8e0-4ee8-ad66-b32674269adc" time="1413930318345" ignored="false" />
     <file path="/Estado.groovy" changelist="397ca0e3-d8e0-4ee8-ad66-b32674269adc" time="1413976995796" ignored="false" />
     <file path="$PROJECT_DIR$/test/unit/br/edu/luciana/soccerManager/EstadoControllerSpec.groovy" changelist="397ca0e3-d8e0-4ee8-ad66-b32674269adc" time="1413934686362" ignored="false" />
@@ -52,15 +66,15 @@
     <file path="/Funcionario.groovy" changelist="397ca0e3-d8e0-4ee8-ad66-b32674269adc" time="1416398377913" ignored="false" />
     <file path="/Sexo.groovy" changelist="397ca0e3-d8e0-4ee8-ad66-b32674269adc" time="1415615692974" ignored="false" />
     <file path="/Pais.groovy" changelist="397ca0e3-d8e0-4ee8-ad66-b32674269adc" time="1415141053462" ignored="false" />
-    <file path="/create.gsp" changelist="397ca0e3-d8e0-4ee8-ad66-b32674269adc" time="1416886220338" ignored="false" />
-    <file path="/show.gsp" changelist="397ca0e3-d8e0-4ee8-ad66-b32674269adc" time="1416887449520" ignored="false" />
+    <file path="/create.gsp" changelist="397ca0e3-d8e0-4ee8-ad66-b32674269adc" time="1416973482715" ignored="false" />
+    <file path="/show.gsp" changelist="397ca0e3-d8e0-4ee8-ad66-b32674269adc" time="1417006988987" ignored="false" />
     <file path="/edit.gsp" changelist="397ca0e3-d8e0-4ee8-ad66-b32674269adc" time="1416886085858" ignored="false" />
     <file path="/DiaSemana.groovy" changelist="397ca0e3-d8e0-4ee8-ad66-b32674269adc" time="1415615967416" ignored="false" />
     <file path="/Cartao.groovy" changelist="397ca0e3-d8e0-4ee8-ad66-b32674269adc" time="1416402499625" ignored="false" />
     <file path="$PROJECT_DIR$/test/unit/br/edu/luciana/soccerManager/FuncionarioControllerSpec.groovy" changelist="397ca0e3-d8e0-4ee8-ad66-b32674269adc" time="1415617572091" ignored="false" />
-    <file path="/Aluno.groovy" changelist="397ca0e3-d8e0-4ee8-ad66-b32674269adc" time="1416887518094" ignored="false" />
+    <file path="/Aluno.groovy" changelist="397ca0e3-d8e0-4ee8-ad66-b32674269adc" time="1417005831194" ignored="false" />
     <file path="$PROJECT_DIR$/test/unit/br/edu/luciana/soccerManager/AlunoControllerSpec.groovy" changelist="397ca0e3-d8e0-4ee8-ad66-b32674269adc" time="1415621665185" ignored="false" />
-    <file path="/AlunoController.groovy" changelist="397ca0e3-d8e0-4ee8-ad66-b32674269adc" time="1415793904585" ignored="false" />
+    <file path="/AlunoController.groovy" changelist="397ca0e3-d8e0-4ee8-ad66-b32674269adc" time="1417006711879" ignored="false" />
     <file path="/DiasSemana.groovy" changelist="397ca0e3-d8e0-4ee8-ad66-b32674269adc" time="1415742905883" ignored="false" />
     <file path="/201411111956.groovy" changelist="397ca0e3-d8e0-4ee8-ad66-b32674269adc" time="1415743119427" ignored="false" />
     <file path="/Mascara.groovy" changelist="397ca0e3-d8e0-4ee8-ad66-b32674269adc" time="1415850066134" ignored="false" />
@@ -72,8 +86,13 @@
     <file path="$PROJECT_DIR$/test/unit/br/edu/luciana/soccerManager/JogoControllerSpec.groovy" changelist="397ca0e3-d8e0-4ee8-ad66-b32674269adc" time="1416402839326" ignored="false" />
     <file path="/Competicao.groovy" changelist="397ca0e3-d8e0-4ee8-ad66-b32674269adc" time="1416443711892" ignored="false" />
     <file path="$PROJECT_DIR$/test/unit/br/edu/luciana/soccerManager/CompeticaoControllerSpec.groovy" changelist="397ca0e3-d8e0-4ee8-ad66-b32674269adc" time="1416443975960" ignored="false" />
-    <file path="/TimeController.groovy" changelist="397ca0e3-d8e0-4ee8-ad66-b32674269adc" time="1416955987728" ignored="false" />
-    <file path="/categoria.gsp" changelist="397ca0e3-d8e0-4ee8-ad66-b32674269adc" time="1416956699553" ignored="false" />
+    <file path="/TimeController.groovy" changelist="397ca0e3-d8e0-4ee8-ad66-b32674269adc" time="1416973587181" ignored="false" />
+    <file path="/categoria.gsp" changelist="397ca0e3-d8e0-4ee8-ad66-b32674269adc" time="1416969818644" ignored="false" />
+    <file path="/Semana.groovy" changelist="397ca0e3-d8e0-4ee8-ad66-b32674269adc" time="1417005851057" ignored="false" />
+    <file path="/mensalidadeLista.gsp" changelist="397ca0e3-d8e0-4ee8-ad66-b32674269adc" time="1417006645845" ignored="false" />
+    <file path="/historico.gsp" changelist="397ca0e3-d8e0-4ee8-ad66-b32674269adc" time="1417006737128" ignored="false" />
+    <file path="/jogos.gsp" changelist="397ca0e3-d8e0-4ee8-ad66-b32674269adc" time="1417006802278" ignored="false" />
+    <file path="$PROJECT_DIR$/test/unit/br/edu/luciana/soccerManager/SemanaControllerSpec.groovy" changelist="397ca0e3-d8e0-4ee8-ad66-b32674269adc" time="1417006987685" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -140,7 +159,16 @@
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state line="149" column="51" selection-start="5140" selection-end="5140" vertical-scroll-proportion="0.0">
+            <state line="160" column="29" selection-start="5364" selection-end="5364" vertical-scroll-proportion="-9.2">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.gsp" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/grails-app/views/layouts/main.gsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="154" column="13" selection-start="10719" selection-end="10731" vertical-scroll-proportion="7.8855424">
               <folding />
             </state>
           </provider>
@@ -149,25 +177,7 @@
       <file leaf-file-name="Time.groovy" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grails-app/domain/br/edu/luciana/soccerManager/Time.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="3" selection-start="218" selection-end="218" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Categoria.groovy" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/domain/br/edu/luciana/soccerManager/Categoria.groovy">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="19" selection-start="101" selection-end="112" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.gsp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/views/time/index.gsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="74" selection-start="779" selection-end="779" vertical-scroll-proportion="0.0">
+            <state line="5" column="15" selection-start="83" selection-end="88" vertical-scroll-proportion="-3.6956522">
               <folding />
             </state>
           </provider>
@@ -176,25 +186,49 @@
       <file leaf-file-name="TimeController.groovy" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grails-app/controllers/br/edu/luciana/soccerManager/TimeController.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="106" column="30" selection-start="2855" selection-end="2873" vertical-scroll-proportion="0.0">
+            <state line="33" column="63" selection-start="962" selection-end="962" vertical-scroll-proportion="-12.173913">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="categoria.gsp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/views/time/categoria.gsp">
+      <file leaf-file-name="Aluno.groovy" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/domain/br/edu/luciana/soccerManager/Aluno.groovy">
+          <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
+            <state />
+          </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="69" selection-start="255" selection-end="255" vertical-scroll-proportion="-4.163265">
+            <state line="35" column="17" selection-start="681" selection-end="681" vertical-scroll-proportion="-3.5416667">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Jogo.groovy" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/grails-app/domain/br/edu/luciana/soccerManager/Jogo.groovy">
+      <file leaf-file-name="show.gsp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/views/aluno/show.gsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="6" selection-start="44" selection-end="44" vertical-scroll-proportion="-0.12639405">
+            <state line="45" column="20" selection-start="1831" selection-end="1882" vertical-scroll-proportion="-1.1224489">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AlunoController.groovy" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/controllers/br/edu/luciana/soccerManager/AlunoController.groovy">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="116" column="0" selection-start="2915" selection-end="2915" vertical-scroll-proportion="-12.391304">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Semana.groovy" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/domain/br/edu/luciana/soccerManager/Semana.groovy">
+          <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="19" selection-start="229" selection-end="229" vertical-scroll-proportion="-3.5416667">
               <folding />
             </state>
           </provider>
@@ -218,22 +252,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/grails-app/views/estado/_form.gsp" />
-        <option value="$PROJECT_DIR$/grails-app/migrations/201411250048.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/migrations/changelog.groovy" />
-        <option value="$PROJECT_DIR$/target/stacktrace.log" />
-        <option value="$PROJECT_DIR$/grails-app/i18n/messages_pt_BR.properties" />
-        <option value="$PROJECT_DIR$/grails-app/views/aluno/edit.gsp" />
-        <option value="$PROJECT_DIR$/grails-app/views/aluno/create.gsp" />
-        <option value="$PROJECT_DIR$/grails-app/views/aluno/_form.gsp" />
-        <option value="$PROJECT_DIR$/grails-app/domain/br/edu/luciana/soccerManager/Aluno.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/views/aluno/show.gsp" />
-        <option value="$PROJECT_DIR$/grails-app/views/jogo/edit.gsp" />
-        <option value="$PROJECT_DIR$/grails-app/views/jogo/create.gsp" />
+        <option value="$PROJECT_DIR$/grails-app/views/time/show.gsp" />
+        <option value="$PROJECT_DIR$/grails-app/views/categoria/index.gsp" />
         <option value="$PROJECT_DIR$/grails-app/views/time/index.gsp" />
-        <option value="$PROJECT_DIR$/grails-app/controllers/br/edu/luciana/soccerManager/TimeController.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/domain/br/edu/luciana/soccerManager/Time.groovy" />
         <option value="$PROJECT_DIR$/grails-app/views/time/categoria.gsp" />
+        <option value="$PROJECT_DIR$/grails-app/views/time/_form.gsp" />
+        <option value="$PROJECT_DIR$/grails-app/views/time/create.gsp" />
+        <option value="$PROJECT_DIR$/grails-app/controllers/br/edu/luciana/soccerManager/TimeController.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/domain/br/edu/luciana/soccerManager/Aluno.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/domain/br/edu/luciana/soccerManager/Semana.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/views/aluno/mensalidadeLista.gsp" />
+        <option value="$PROJECT_DIR$/grails-app/views/aluno/historico.gsp" />
+        <option value="$PROJECT_DIR$/grails-app/controllers/br/edu/luciana/soccerManager/AlunoController.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/views/aluno/jogos.gsp" />
+        <option value="$PROJECT_DIR$/grails-app/views/aluno/show.gsp" />
+        <option value="$PROJECT_DIR$/grails-app/i18n/messages_pt_BR.properties" />
+        <option value="$PROJECT_DIR$/grails-app/views/layouts/main.gsp" />
       </list>
     </option>
   </component>
@@ -469,7 +503,11 @@
       <created>1416887669744</created>
       <updated>1416887669744</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="alterações em time">
+      <created>1416967338424</created>
+      <updated>1416967338424</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -506,9 +544,11 @@
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3100511" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
-      <window_info id="Grails View" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18636364" sideWeight="0.6746167" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4088586" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Grails View" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18636364" sideWeight="0.67632025" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32879046" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18787879" sideWeight="0.21465077" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32879046" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -517,13 +557,11 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24961948" sideWeight="0.7074722" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3251634" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4088586" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32367972" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3253833" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -569,7 +607,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="alterações em aluno" />
+    <option name="LAST_COMMIT_MESSAGE" value="alterações em time" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -586,6 +624,7 @@
     <MESSAGE value="teste" />
     <MESSAGE value="teste luciana" />
     <MESSAGE value="alterações em aluno" />
+    <MESSAGE value="alterações em time" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -595,51 +634,78 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/grails-app/views/estado/show.gsp">
+    <entry file="file://$PROJECT_DIR$/grails-app/views/time/index.gsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="63" column="27" selection-start="2911" selection-end="2911" vertical-scroll-proportion="0.11422846" />
+        <state line="36" column="16" selection-start="1296" selection-end="1321" vertical-scroll-proportion="-2.367347">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/pais/edit.gsp">
+    <entry file="file://$PROJECT_DIR$/grails-app/views/aluno/_form.gsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="20" selection-start="1932" selection-end="2432" vertical-scroll-proportion="0.5644531" />
+        <state line="5" column="16" selection-start="208" selection-end="406" vertical-scroll-proportion="0.27508092">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/estado/create.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="20" selection-start="1847" selection-end="2353" vertical-scroll-proportion="0.36523438" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/estado/_form.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="45" selection-start="435" selection-end="455" vertical-scroll-proportion="0.250501" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/pais/index.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="73" column="0" selection-start="2643" selection-end="2819" vertical-scroll-proportion="0.53515625" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/i18n/messages_pt_BR.properties">
-      <provider editor-type-id="ResourceBundle">
+    <entry file="file://$PROJECT_DIR$/grails-app/domain/br/edu/luciana/soccerManager/Time.groovy">
+      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state line="149" column="51" selection-start="5140" selection-end="5140" vertical-scroll-proportion="0.0">
+        <state line="5" column="15" selection-start="83" selection-end="88" vertical-scroll-proportion="-3.6956522">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/layouts/main.gsp">
+    <entry file="file://$PROJECT_DIR$/grails-app/views/time/create.gsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="140" column="59" selection-start="9688" selection-end="9693" vertical-scroll-proportion="0.4559387">
+        <state line="56" column="68" selection-start="2487" selection-end="2487" vertical-scroll-proportion="-4.9183674">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/time/index.gsp">
+    <entry file="file://$PROJECT_DIR$/grails-app/views/time/categoria.gsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="74" selection-start="779" selection-end="779" vertical-scroll-proportion="0.0">
+        <state line="47" column="31" selection-start="1965" selection-end="1999" vertical-scroll-proportion="-1.4081633">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/aluno/mensalidadeLista.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="33" selection-start="33" selection-end="33" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/aluno/historico.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="36" selection-start="36" selection-end="36" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/aluno/jogos.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="37" selection-start="37" selection-end="37" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/controllers/br/edu/luciana/soccerManager/TimeController.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="63" selection-start="962" selection-end="962" vertical-scroll-proportion="-12.173913">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/domain/br/edu/luciana/soccerManager/Semana.groovy">
+      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="19" selection-start="229" selection-end="229" vertical-scroll-proportion="-3.5416667">
           <folding />
         </state>
       </provider>
@@ -649,61 +715,45 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state line="69" column="4" selection-start="1299" selection-end="1368" vertical-scroll-proportion="0.58074534">
+        <state line="35" column="17" selection-start="681" selection-end="681" vertical-scroll-proportion="-3.5416667">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/domain/br/edu/luciana/soccerManager/Categoria.groovy">
-      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
+    <entry file="file://$PROJECT_DIR$/grails-app/controllers/br/edu/luciana/soccerManager/AlunoController.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="116" column="0" selection-start="2915" selection-end="2915" vertical-scroll-proportion="-12.391304">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/i18n/messages_pt_BR.properties">
+      <provider editor-type-id="ResourceBundle">
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="19" selection-start="101" selection-end="112" vertical-scroll-proportion="0.0">
+        <state line="160" column="29" selection-start="5364" selection-end="5364" vertical-scroll-proportion="-9.2">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/controllers/br/edu/luciana/soccerManager/TimeController.groovy">
+    <entry file="file://$PROJECT_DIR$/grails-app/views/aluno/show.gsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="106" column="30" selection-start="2855" selection-end="2873" vertical-scroll-proportion="0.0">
+        <state line="45" column="20" selection-start="1831" selection-end="1882" vertical-scroll-proportion="-1.1224489">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/categoria/create.gsp">
+    <entry file="jar://$PROJECT_DIR$/../../grails-2.3.11/dist/grails-plugin-gsp-2.3.11-sources.jar!/org/codehaus/groovy/grails/plugins/web/taglib/RenderTagLib.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="75" selection-start="1788" selection-end="1788" vertical-scroll-proportion="0.38636363" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/aluno/create.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="8" selection-start="716" selection-end="765" vertical-scroll-proportion="-3.4693878" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/domain/br/edu/luciana/soccerManager/Time.groovy">
-      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="3" selection-start="218" selection-end="218" vertical-scroll-proportion="0.0">
+        <state line="338" column="59" selection-start="12716" selection-end="12716" vertical-scroll-proportion="5.074184">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/time/categoria.gsp">
+    <entry file="file://$PROJECT_DIR$/grails-app/views/layouts/main.gsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="69" selection-start="255" selection-end="255" vertical-scroll-proportion="-4.163265">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/domain/br/edu/luciana/soccerManager/Jogo.groovy">
-      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="6" selection-start="44" selection-end="44" vertical-scroll-proportion="-0.12639405">
+        <state line="154" column="13" selection-start="10719" selection-end="10731" vertical-scroll-proportion="7.8855424">
           <folding />
         </state>
       </provider>

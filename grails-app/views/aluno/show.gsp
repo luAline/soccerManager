@@ -33,6 +33,27 @@
                     <g:message code="default.new.label" args="[entityName]" />
                 </button>
             </g:link>
+
+            <g:link controller="aluno" action="mensalidadeLista">
+                <button class="btn btn-default">
+                    <i class="glyphicon glyphicon-list icon-white"></i>
+                    <g:message code="aluno.mensalidade" args="[entityName]" />
+                </button>
+            </g:link>
+
+            <g:link controller="aluno" action="historico">
+                <button class="btn btn-default">
+                    <i class="glyphicon glyphicon-list icon-white"></i>
+                    <g:message code="aluno.historico" args="[entityName]" />
+                </button>
+            </g:link>
+
+            <g:link controller="aluno" action="jogos">
+                <button class="btn btn-default">
+                    <i class="glyphicon glyphicon-list icon-white"></i>
+                    <g:message code="jogo.label" args="[entityName]" />
+                </button>
+            </g:link>
         </div>
     </div>
 

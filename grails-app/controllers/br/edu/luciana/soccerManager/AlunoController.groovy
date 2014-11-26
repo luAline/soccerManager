@@ -101,4 +101,16 @@ class AlunoController {
             '*'{ render status: NOT_FOUND }
         }
     }
+
+    def mensalidadeLista(){
+
+    }
+
+    def historico(){
+
+    }
+
+    def jogos(){
+
+    }
 }

@@ -16,11 +16,17 @@ class TimeController {
     }
 
     def show(Time timeInstance) {
-        respond timeInstance
+        def alunoLista = Aluno.list()
+
+        println("Idade min: "+timeInstance?.categoria?.idadeMinima)
+        println("Idade max: "+timeInstance?.categoria?.idadeMaxima)
+        [timeInstance:timeInstance,alunoLista:alunoLista]
     }
 
     def create() {
-        respond new Time(params)
+        def alunoLista = Aluno.list()
+        def timeInstance = new Time(params)
+        return [alunoLista: alunoLista, timeInstance: timeInstance]
     }
 
     @Transactional
@@ -103,10 +109,7 @@ class TimeController {
     }
 
     def categoria(){
-        println("categoria")
         def listaCategoriaList = Categoria.list()
-
-        println("lista: "+listaCategoriaList)
         return [listaCategoriaList:listaCategoriaList]
     }
 }
