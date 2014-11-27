@@ -12,21 +12,17 @@ class TimeController {
 
     def index(Integer max) {
         params.max = Math.min(max ?: 10, 100)
-        respond Time.list(params), model: [timeInstanceCount: Time.count()]
+        respond Time.list(params), model:[timeInstanceCount: Time.count()]
     }
 
     def show(Time timeInstance) {
-        def alunoLista = Aluno.list()
-
-        println("Idade min: "+timeInstance?.categoria?.idadeMinima)
-        println("Idade max: "+timeInstance?.categoria?.idadeMaxima)
-        [timeInstance:timeInstance,alunoLista:alunoLista]
+        respond timeInstance
     }
 
     def create() {
-        def alunoLista = Aluno.list()
-        def timeInstance = new Time(params)
-        return [alunoLista: alunoLista, timeInstance: timeInstance]
+
+        respond new Time(params)
+
     }
 
     @Transactional
@@ -37,11 +33,11 @@ class TimeController {
         }
 
         if (timeInstance.hasErrors()) {
-            respond timeInstance.errors, view: 'create'
+            respond timeInstance.errors, view:'create'
             return
         }
 
-        timeInstance.save flush: true
+        timeInstance.save flush:true
 
         request.withFormat {
             form multipartForm {
@@ -64,18 +60,18 @@ class TimeController {
         }
 
         if (timeInstance.hasErrors()) {
-            respond timeInstance.errors, view: 'edit'
+            respond timeInstance.errors, view:'edit'
             return
         }
 
-        timeInstance.save flush: true
+        timeInstance.save flush:true
 
         request.withFormat {
             form multipartForm {
                 flash.message = message(code: 'default.updated.message', args: [message(code: 'Time.label', default: 'Time'), timeInstance.id])
                 redirect timeInstance
             }
-            '*' { respond timeInstance, [status: OK] }
+            '*'{ respond timeInstance, [status: OK] }
         }
     }
 
@@ -87,14 +83,14 @@ class TimeController {
             return
         }
 
-        timeInstance.delete flush: true
+        timeInstance.delete flush:true
 
         request.withFormat {
             form multipartForm {
                 flash.message = message(code: 'default.deleted.message', args: [message(code: 'Time.label', default: 'Time'), timeInstance.id])
-                redirect action: "index", method: "GET"
+                redirect action:"index", method:"GET"
             }
-            '*' { render status: NO_CONTENT }
+            '*'{ render status: NO_CONTENT }
         }
     }
 
@@ -104,12 +100,19 @@ class TimeController {
                 flash.message = message(code: 'default.not.found.message', args: [message(code: 'time.label', default: 'Time'), params.id])
                 redirect action: "index", method: "GET"
             }
-            '*' { render status: NOT_FOUND }
+            '*'{ render status: NOT_FOUND }
         }
     }
 
     def categoria(){
         def listaCategoriaList = Categoria.list()
         return [listaCategoriaList:listaCategoriaList]
+    }
+
+    def montarTime(){
+        def categoriaInstance = Categoria.get(params.id)
+
+        println("Cat: "+categoriaInstance)
+        return [categoriaInstance: categoriaInstance]
     }
 }

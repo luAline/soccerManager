@@ -9,7 +9,7 @@
             </label>
         </div>
 
-        <div class="form-group col-md-10 fieldcontain ${hasErrors(bean: funcaoInstance, field: 'nome', 'error')} required ">
+        <div class="form-group col-md-10">
             <label for="nome">
                 <g:message code="soccerManager.nome" default="Nome" />
                 <span class="required-indicator">*</span>

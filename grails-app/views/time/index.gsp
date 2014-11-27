@@ -39,6 +39,7 @@
                         <thead>
                         <tr>
                             <th><g:message code="soccerManager.acao"/></th>
+                            <th><g:message code="soccerManager.descricao"/></th>
                             <th><g:message code="categoria.label"/></th>
                         </tr>
                         </thead>
@@ -49,6 +50,7 @@
                                     <g:link action="show" id="${timeInstance.id}"><i class="glyphicon glyphicon-search blue"></i></g:link>
                                     <g:link action="edit" id="${timeInstance.id}"><i class="glyphicon glyphicon-pencil green"></i></g:link>
                                 </td>
+                                <td>${timeInstance?.observacao}</td>
                                 <td>${timeInstance?.categoria}</td>
                             </tr>
                         </g:each>

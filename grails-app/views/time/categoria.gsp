@@ -25,12 +25,6 @@
                     <g:message code="default.list.label" args="[entityName]" />
                 </button>
             </g:link>
-            <g:link controller="time" action="create">
-                <button class="btn btn-info">
-                    <i class="glyphicon glyphicon-plus icon-white"></i>
-                    <g:message code="default.new.label" args="[entityName]" />
-                </button>
-            </g:link>
         </div>
     </div>
 
@@ -46,7 +40,7 @@
                         <div class="box-content">
                             <g:each in="${listaCategoriaList}" var="timeInstance">
                                 <div class="form-group col-md-2">
-                                    <g:link class="create" action="create" controller="time" id="${timeInstance?.id}">${timeInstance?.nome}</g:link>
+                                    <g:link action="create" controller="time" id="${timeInstance?.id}">${timeInstance?.nome}</g:link>
                                 </div>
                             </g:each>
                         </div>

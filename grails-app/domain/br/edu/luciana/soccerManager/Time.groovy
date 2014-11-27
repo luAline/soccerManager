@@ -13,8 +13,8 @@ class Time {
 
     static constraints = {
         numeroCamisa(nullable: true, blank: true)
-        aluno()
-        categoria()
+        aluno(nullable: true, blank: true)
+        categoria(nullable: true, blank: true)
         observacao(nullable: true, blank: true)
     }
 
