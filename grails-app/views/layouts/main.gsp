@@ -92,7 +92,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand home" href="${createLink(uri: '/')}">
+            <a class="navbar-brand home" href="${createLink(url: '../menu/telaInicio')}">
                 <img alt="SoccerManager Logo" src="${resource(dir:'images',file: 'bolaLogo.png')}" class="hidden-xs">
                 <span style="font-size: 13px"><g:message code="soccerManager.label"/> </span>
             </a>
@@ -125,7 +125,7 @@
 
                         </div>
                         <ul class="nav nav-pills nav-stacked main-menu">
-                            <li class="nav-header" style="text-align: center"><g:link uri="/"> <g:message code="soccerManager.menu"/></g:link> </li>
+                            <li class="nav-header" style="text-align: center"><g:link url="[action: 'telaInicio', controller: 'menu']"> <g:message code="soccerManager.menu"/></g:link> </li>
 
                             <li class="nav-header hidden-md"><g:message code="soccerManager.cadastro"/> </li>
                             <li><g:link url="[action:'index',controller:'aluno']"><i class="glyphicon glyphicon-certificate"></i> <g:message code="aluno.label"/></g:link></li>

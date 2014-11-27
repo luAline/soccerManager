@@ -4,7 +4,7 @@
 <div class="col-sm-10 col-lg-10">
     <ul class="breadcrumb">
         <li>
-            <a class="home" href="${createLink(uri: '/')}"><g:message code="default.home.label"/></a>
+            <a class="home" href="${createLink(url: '../menu/telaInicio')}"><g:message code="default.home.label"/></a>
         </li>
         <li><g:link class="list" action="index"><g:message code="default.list.label" args="[entityName]" /></g:link></li>
         <li><g:message code="default.create.label" args="[entityName]" /></li>
@@ -43,22 +43,28 @@
                 <g:form url="[resource:timeInstance, action:'save']" >
 
                     <div class="box-content">
-                        <table class="table table-bordered table-striped table-condensed">
-                            <thead>
-                            <tr>
-                                <th><g:message code="time.marcarAluno"/> </th>
-                                <th><g:message code="aluno.label"/> </th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            <g:each in="${alunoLista}" var="alunoInstance">
-                                <tr>
-                                    <td><g:checkBox name="ativo" value="" /></td>
-                                    <td>${alunoInstance?.nome}</td>
-                                </tr>
-                            </g:each>
-                            </tbody>
-                        </table>
+                        <div class="col-md-2">
+                            <label for="numeroCamisa">
+                                <g:message code="time.numCamisa" default="Numero Camisa" />
+                                <span class="required-indicator">*</span>
+                            </label>
+                            <g:textField name="numeroCamisa" type="number" class="form-control" value="${timeInstance.numeroCamisa}" required=""/>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="aluno">
+                                <g:message code="aluno.label" default="Aluno" />
+                                <span class="required-indicator">*</span>
+                            </label>
+                            <g:select id="aluno" name="aluno" from="${br.edu.luciana.soccerManager.Aluno.list()}" optionKey="id" required="" value="${timeInstance?.aluno?.id}" class="many-to-one"/>
+
+                        </div>
+                        <div class="col-md-4">
+                            <label for="observacao">
+                                <g:message code="soccerManager.observacao" default="Observacao" />
+
+                            </label>
+                            <g:textField name="observacao" value="${timeInstance?.observacao}"/>
+                        </div>
                     </div>
 
 
