@@ -110,9 +110,46 @@ class TimeController {
     }
 
     def montarTime(){
-        def categoriaInstance = Categoria.get(params.id)
+        def timeInstance = Time.get(params.id)
+        def timeAlunoInstance = TimeAluno.get(params.timeAluno)
+        def listaAlunos = Aluno.findAll("from Aluno a where a.idade >= "+timeInstance.categoria?.idadeMinima+" and a.idade <= "+timeInstance.categoria?.idadeMaxima)
 
-        println("Cat: "+categoriaInstance)
-        return [categoriaInstance: categoriaInstance]
+        return [timeAlunoInstance:timeAlunoInstance,timeInstance: timeInstance,listaAlunos:listaAlunos]
+    }
+
+    @Transactional
+    def adicionarAlunoTime(){
+        println("adicionarAlunoTime:"+params)
+        def timeInstance = Time.get(params.time)
+        def alunoInstance = Aluno.get(params.aluno)
+        def timeAlunoInstance = TimeAluno.findByTimeAndAluno(timeInstance,alunoInstance)
+        if ((timeAlunoInstance) && (!params.timeAluno)) {
+            flash.message = "Aluno já se encontra no time"
+            redirect(action: "montarTime", id: params.time)
+        }else{
+            timeAlunoInstance = TimeAluno.get(params.timeAluno)
+            if (timeAlunoInstance){
+                timeAlunoInstance.aluno = alunoInstance
+                timeAlunoInstance.numeroCamisa = params.numeroCamisa.toInteger()
+                timeAlunoInstance.save(flush: true)
+                flash.message = "Aluno Atualizado"
+                redirect(action: "montarTime", id: params.time)
+            }else{
+                timeAlunoInstance = new TimeAluno(time:timeInstance, aluno: alunoInstance, numeroCamisa: params.numeroCamisa.toInteger())
+                timeAlunoInstance.save(flush: true)
+                flash.message = "Aluno adicionado no time"
+                redirect(action: "montarTime", id: params.time)
+            }
+
+        }
+    }
+
+    @Transactional
+    def retirarAluno(){
+        def timeAlunoInstance = TimeAluno.get(params.id)
+        Integer idTime = timeAlunoInstance.time.id
+        timeAlunoInstance.delete(flush: true)
+        flash.message = "Aluno Retirado"
+        redirect(action: "montarTime", id:idTime)
     }
 }

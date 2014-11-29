@@ -45,6 +45,7 @@
 
     <script src="${resource(dir: 'js', file: 'jquery-migrate.min.js')}" type="text/javascript"></script>
     -->
+    <script src="${resource(dir: 'js', file: 'jquery.min.js')}" type="text/javascript"></script>
 
     <script src="${resource(dir: 'js', file: 'jquery-1.11.1.min.js')}" type="text/javascript"></script>
     <script src="${resource(dir: 'js', file: 'bootstrap.js')}" type="text/javascript"></script>
@@ -52,7 +53,7 @@
     <script src="${resource(dir: 'js', file: 'charisma.js')}" type="text/javascript"></script>
     <script src="${resource(dir: 'js', file: 'jquery.js')}" type="text/javascript"></script>
     <script src="${resource(dir: 'js', file: 'jquery-migrate.js')}" type="text/javascript"></script>
-    <script src="${resource(dir: 'js', file: 'jquery.min.js')}" type="text/javascript"></script>
+
     <script src="${resource(dir: 'js', file: 'affix.js')}" type="text/javascript"></script>
     <script src="${resource(dir: 'js', file: 'app.js')}" type="text/javascript"></script>
     <script src="${resource(dir: 'js', file: 'application.js')}" type="text/javascript"></script>
@@ -83,6 +84,8 @@
 	</head>
 	<body>
 
+    <g:if test="${session.usuario}">
+
     <div class="navbar navbar-default" role="navigation">
 
         <div class="navbar-inner">
@@ -100,22 +103,26 @@
             <!-- user dropdown starts -->
             <div class="btn-group pull-right">
                 <button class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-                    <i class="glyphicon glyphicon-user"></i><span class="hidden-sm hidden-xs"> admin</span>
+                    <i class="glyphicon glyphicon-user"></i><span class="hidden-sm hidden-xs"> ${session.usuario?.nome}</span>
                     <span class="caret"></span>
                 </button>
                 <ul class="dropdown-menu">
                     <li><a href="#">Profile</a></li>
                     <li class="divider"></li>
-                    <li><a href="login.html">Logout</a></li>
+                    <li><g:link controller="usuario" action="fazerLogout">Logout</g:link></li>
                 </ul>
             </div>
         </div>
     </div>
 
+    </g:if>
+
 
 
     <div class="ch-container">
         <div class="row">
+
+            <g:if test="${session.usuario}">
 
 
             <div class="col-sm-2 col-lg-2">
@@ -150,7 +157,7 @@
                 </div>
             </div>
 
-
+            </g:if>
 
             <g:layoutBody/>
             <r:layoutResources/>

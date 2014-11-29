@@ -26,10 +26,6 @@ databaseChangeLog = {
         }
     }
 
-    changeSet(author: "Luciana (generated)", id: "1416401451996-4") {
-        dropTable(tableName: "dias_semana")
-    }
-
     changeSet(author: "Luciana (generated)", id: "1416401451996-2") {
         addForeignKeyConstraint(baseColumnNames: "aluno_id", baseTableName: "time", constraintName: "FK3652CDA9F76DD1", deferrable: "false", initiallyDeferred: "false", referencedColumnNames: "id", referencedTableName: "aluno", referencesUniqueColumn: "false")
     }

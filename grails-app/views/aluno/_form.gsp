@@ -23,7 +23,7 @@
                 </label>
                 <g:textField name="nome" required="" class="form-control" value="${alunoInstance?.nome}"/>
             </div>
-            <div class="form-group col-md-1">
+            <div class="form-group col-md-1 hidden">
                 <label for="idade">
                     <g:message code="soccerManager.idade" default="Idade" />
                     <span class="required-indicator">*</span>
