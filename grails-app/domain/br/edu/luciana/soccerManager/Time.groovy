@@ -2,8 +2,6 @@ package br.edu.luciana.soccerManager
 
 class Time {
 
-    int numeroCamisa
-    Aluno aluno
     Categoria categoria
     String observacao
 
@@ -11,9 +9,15 @@ class Time {
         observacao = s?.toUpperCase()
     }
 
+    String toString(){
+        categoria
+    }
+
+    def getListaAlunos(){
+        TimeAluno.findAllByTime(this)
+    }
+
     static constraints = {
-        numeroCamisa(nullable: true, blank: true)
-        aluno(nullable: true, blank: true)
         categoria(nullable: true, blank: true)
         observacao(nullable: true, blank: true)
     }

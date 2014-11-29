@@ -19,10 +19,10 @@
 <div class="col-sm-10 col-lg-10">
     <div class="row">
         <div class="box col-md-12">
-            <g:link controller="time" action="categoria">
+            <g:link controller="time" action="create">
                 <button class="btn btn-info">
                     <i class="glyphicon glyphicon-plus icon-white"></i>
-                    <g:message code="categoria.label" args="[entityName]" />
+                    <g:message code="default.new.label" args="[entityName]" />
                 </button>
             </g:link>
         </div>
@@ -41,6 +41,7 @@
                             <th><g:message code="soccerManager.acao"/></th>
                             <th><g:message code="soccerManager.descricao"/></th>
                             <th><g:message code="categoria.label"/></th>
+                            <th><g:message code="aluno.quantidade"/></th>
                         </tr>
                         </thead>
                         <tbody>
@@ -52,6 +53,7 @@
                                 </td>
                                 <td>${timeInstance?.observacao}</td>
                                 <td>${timeInstance?.categoria}</td>
+                                <td>${timeInstance?.listaAlunos?.size()}</td>
                             </tr>
                         </g:each>
                         </tbody>

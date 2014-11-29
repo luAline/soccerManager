@@ -27,13 +27,7 @@
                     <g:message code="default.list.label" args="[entityName]" />
                 </button>
             </g:link>
-            <g:link controller="time" action="categoria">
-                <button class="btn btn-info">
-                    <i class="glyphicon glyphicon-plus icon-white"></i>
-                    <g:message code="categoria.label" args="[entityName]" />
-                </button>
-            </g:link>
-            <g:link controller="time" action="montarTime">
+            <g:link controller="time" action="montarTime" id="${timeInstance?.id}">
                 <button class="btn btn-default">
                     <i class="glyphicon glyphicon-plus icon-white"></i>
                     <g:message code="time.montarTime" args="[entityName]" />
@@ -50,12 +44,19 @@
                         <h2><i class="glyphicon glyphicon-picture"></i> <g:message code="default.show.label" args="[entityName]" /></h2>
                     </div>
                     <div class="box-content">
-                        <div class="form-group col-md-12">
+                        <div class="form-group col-md-8">
                             <label for="observacao">
                                 <g:message code="soccerManager.descricao" default="Observacao" />
 
                             </label>
                             <g:textField name="observacao" class="form-control" readonly="true" value="${timeInstance?.observacao}"/>
+                        </div>
+
+                        <div class="form-group col-md-4">
+                            <label class="control-label" for="categoria">
+                                <g:message code="categoria.label" default="Categoria" />
+                            </label>
+                            <g:textField name="categoria" class="form-control" readonly="true" value="${timeInstance?.categoria}"/>
                         </div>
                     </div>
 
@@ -73,6 +74,7 @@
                         </div>
                     </div>
 
+                    <g:render template="timeLista"/>
                 </div>
             </div>
         </div>
