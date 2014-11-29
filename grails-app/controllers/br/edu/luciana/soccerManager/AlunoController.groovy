@@ -35,6 +35,8 @@ class AlunoController {
             return
         }
 
+        alunoInstance.idade = Aluno.calculaIdade(alunoInstance.dataNascimento)
+
         alunoInstance.save flush:true
 
         request.withFormat {
@@ -61,7 +63,7 @@ class AlunoController {
             respond alunoInstance.errors, view:'edit'
             return
         }
-
+        alunoInstance.idade = Aluno.calculaIdade(alunoInstance.dataNascimento)
         alunoInstance.save flush:true
 
         request.withFormat {
@@ -100,5 +102,17 @@ class AlunoController {
             }
             '*'{ render status: NOT_FOUND }
         }
+    }
+
+    def mensalidadeLista(){
+
+    }
+
+    def historico(){
+
+    }
+
+    def jogos(){
+
     }
 }

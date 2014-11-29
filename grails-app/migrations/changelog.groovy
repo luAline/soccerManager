@@ -48,4 +48,16 @@ databaseChangeLog = {
 	include file: '201411210100.groovy'
 
 	include file: '201411210119.groovy'
+
+	include file: '201411250057.groovy'
+
+	include file: '201411250102.groovy'
+
+	include file: '201411261044.groovy'
+
+	include file: '201411270215.groovy'
+
+	include file: '201411291509.groovy'
+
+	include file: '201411291707.groovy'
 }

@@ -5,7 +5,7 @@
 <div class="col-sm-10 col-lg-10">
     <ul class="breadcrumb">
         <li>
-            <a class="home" href="${createLink(uri: '/')}"><g:message code="default.home.label"/></a>
+            <a class="home" href="${createLink(url: '../menu/telaInicio')}"><g:message code="default.home.label"/></a>
         </li>
         <li><g:link class="list" action="index"><g:message code="default.list.label" args="[entityName]" /></g:link></li>
         <li><g:message code="default.create.label" args="[entityName]" /></li>
@@ -26,7 +26,7 @@
 <div class="col-sm-10 col-lg-10">
     <div class="row">
         <div class="box col-md-12">
-            <g:link controller="pais" action="index">
+            <g:link controller="funcao" action="index">
                 <button class="btn btn-default">
                     <i class="glyphicon glyphicon-list icon-white"></i>
                     <g:message code="default.list.label" args="[entityName]" />

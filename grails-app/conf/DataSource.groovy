@@ -17,7 +17,7 @@ environments {
             dbCreate = "none" // one of 'create', 'create-drop','update'
             url = "jdbc:postgresql://127.0.0.1:5432/soccerManager"
             username = "postgres"
-            password = "luciana"
+            password = "@novi#"
         }
     }
     test {

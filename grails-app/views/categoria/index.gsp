@@ -6,13 +6,13 @@
 <div class="col-sm-10 col-lg-10">
     <ul class="breadcrumb">
         <li>
-            <a class="home" href="${createLink(uri: '/')}"><g:message code="default.home.label"/></a>
+            <a class="home" href="${createLink(url: '../menu/telaInicio')}"><g:message code="default.home.label"/></a>
         </li>
         <li><g:message code="default.list.label" args="[entityName]" /></li>
     </ul>
 </div>
 
-<h1><g:message code="default.list.label" args="[entityName]" /></h1>
+
 <g:if test="${flash.message}">
     <div class="message" role="status">${flash.message}</div>
 </g:if>

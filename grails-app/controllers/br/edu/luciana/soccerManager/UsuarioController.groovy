@@ -80,7 +80,6 @@ class UsuarioController {
             notFound()
             return
         }
-
         usuarioInstance.delete flush: true
 
         request.withFormat {
@@ -100,5 +99,31 @@ class UsuarioController {
             }
             '*' { render status: NOT_FOUND }
         }
+    }
+
+    def login(){
+
+    }
+
+    def fazerLogin(){
+        def usuarioInstance = Usuario.findByUsuarioAndSenha(params.usuario, params.senha)
+        println("parametros do Login:"+params)
+
+        if (usuarioInstance){
+            session.usuario = usuarioInstance
+            flash.message = "Bem vindo "+usuarioInstance.nome
+            redirect(controller: "menu", action: "telaInicio")
+        }else{
+            flash.message = "Usuário e Senha Inválidos"
+            redirect(action: "login")
+        }
+
+
+    }
+
+    def fazerLogout(){
+        session.usuario = null
+        flash.message = "Usuário desconectado"
+        redirect(action: "login")
     }
 }

@@ -17,7 +17,7 @@ class Aluno {
     String parentesco
     String telefone
     double valorMensalidade
-    Date vencimentoMensalidade
+    int vencimentoMensalidade
     Date dataCadastro
     double altura
     double peso
@@ -34,6 +34,10 @@ class Aluno {
     String bairro
     String cep
     Cidade cidade
+
+    def getListaMensalidades(){
+        AlunoMensalidade.findAllByAluno(this)
+    }
 
     String toString(){
         nome
@@ -59,9 +63,49 @@ class Aluno {
         deficiencia = s?.toUpperCase()
     }
 
-    String setObservacao( String s ){
-        observacao = s?.toUpperCase()
+    String setLogradouro( String s ){
+        logradouro = s?.toUpperCase()
     }
+
+    String setComplemento( String s ){
+        complemento = s?.toUpperCase()
+    }
+
+    String setBairro( String s ){
+        bairro = s?.toUpperCase()
+    }
+
+    public static int calculaIdade(Date data){
+
+
+
+        Calendar dateOfBirth = new GregorianCalendar();
+
+        dateOfBirth.setTime(data);
+
+// Cria um objeto calendar com a data atual
+
+        Calendar today = Calendar.getInstance();
+
+// Obtém a idade baseado no ano
+
+        int age = today.get(Calendar.YEAR) - dateOfBirth.get(Calendar.YEAR);
+
+
+
+        dateOfBirth.add(Calendar.YEAR, age);
+
+        if (today.before(dateOfBirth)) {
+
+            age--;
+
+        }
+
+        return age;
+
+    }
+
+
 
 
     static constraints = {
