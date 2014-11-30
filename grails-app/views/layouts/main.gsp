@@ -28,10 +28,14 @@
     <link rel="stylesheet" href="${resource(dir: 'css', file: 'elfinder.theme.css')}" type="text/css">
     <link rel="stylesheet" href="${resource(dir: 'css', file: 'errors.css')}" type="text/css">
     <link rel="stylesheet" href="${resource(dir: 'css', file: 'forms.css')}" type="text/css">
+    <link rel="stylesheet" href="${resource(dir: 'css', file: 'fullcalendar.css')}" type="text/css">
+    <link rel="stylesheet" href="${resource(dir: 'css', file: 'fullcalendar.min.css')}" type="text/css">
+    <link rel="stylesheet" href="${resource(dir: 'css', file: 'fullcalendar.print.css')}" type="text/css">
     <link rel="stylesheet" href="${resource(dir: 'css', file: 'globals.css')}" type="text/css">
     <link rel="stylesheet" href="${resource(dir: 'css', file: 'ie.css')}" type="text/css">
     <link rel="stylesheet" href="${resource(dir: 'css', file: 'jquery.noty.css')}" type="text/css">
     <link rel="stylesheet" href="${resource(dir: 'css', file: 'jquery-ui-1.8.21.custom.css')}" type="text/css">
+    <link rel="stylesheet" href="${resource(dir: 'css', file: 'jquery-ui.css')}" type="text/css">
     <link rel="stylesheet" href="${resource(dir: 'css', file: 'mobile.css')}" type="text/css">
     <link rel="stylesheet" href="${resource(dir: 'css', file: 'noty_theme_default.css')}" type="text/css">
     <link rel="stylesheet" href="${resource(dir: 'css', file: 'orbit.css')}" type="text/css">
@@ -71,8 +75,11 @@
     <script src="${resource(dir: 'js', file: 'jquery.dataTables.min.js')}" type="text/javascript"></script>
     <script src="${resource(dir: 'js', file: 'jquery.noty.js')}" type="text/javascript"></script>
     <script src="${resource(dir: 'js', file: 'jquery.orbit-1.3.0.js')}" type="text/javascript"></script>
+    <script src="${resource(dir: 'js', file: 'jquery-ui.js')}" type="text/javascript"></script>
     <script src="${resource(dir: 'js', file: 'moment.js')}" type="text/javascript"></script>
     <script src="${resource(dir: 'js', file: 'moment.min.js')}" type="text/javascript"></script>
+    <script src="${resource(dir: 'js', file: 'fullcalendar.js')}" type="text/javascript"></script>
+    <script src="${resource(dir: 'js', file: 'fullcalendar.min.js')}" type="text/javascript"></script>
     <script src="${resource(dir: 'js', file: 'popover.js')}" type="text/javascript"></script>
     <script src="${resource(dir: 'js', file: 'responsive-tables.js')}" type="text/javascript"></script>
     <script src="${resource(dir: 'js', file: 'transition.js')}" type="text/javascript"></script>
@@ -145,7 +152,9 @@
                             <li class="nav-header hidden-md"><g:message code="soccerManager.competicao"/> </li>
                             <li><g:link url="[action:'index',controller:'time']"><i class="glyphicon glyphicon-star"></i> <g:message code="time.label"/></g:link></li>
                             <li><g:link url="[action:'index',controller:'jogo']"><i class="glyphicon glyphicon-star"></i> <g:message code="jogo.label"/></g:link></li>
+                            <li><g:link url="[action:'calendario',controller:'calendario']"><i class="glyphicon glyphicon-calendar"></i> <g:message code="calendario.label"/></g:link></li>
                             <li><g:link url="[action:'index',controller:'local']"><i class="glyphicon glyphicon-new-window"></i> <g:message code="local.label"/></g:link></li>
+                            <li><g:link url="[action:'galeriaFotos',controller:'jogo']"><i class="glyphicon glyphicon-picture"></i> <g:message code="jogo.galeriaFoto"/></g:link></li>
 
                             <li class="nav-header hidden-md"><g:message code="soccerManager.configuracao"/> </li>
                             <li><g:link url="[action:'index',controller:'usuario']"><i class="glyphicon glyphicon-user"></i> <g:message code="usuario.label"/></g:link></li>
@@ -173,3 +182,5 @@
 
 	</body>
 </html>
+
+

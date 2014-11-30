@@ -40,6 +40,20 @@ grails.plugin.databasemigration.updateOnStartFileNames = ["changelog.groovy"]
 grails.resources.adhoc.patterns = ['/images/*', '/css/*', '/js/*', '/plugins/*', '/font/*']
 grails.resources.adhoc.includes = ['/WEB-INF/**']
 
+grails.resources.modules = {
+    core {
+        resource url:'/js/jquery-1.11.1.min.js', disposition: 'head'
+    }
+
+    fullCalendar {
+        dependsOn 'core'
+        resource url:'/js/fullcalendar.min.js'
+        resource url:'/css/fullcalendar.css'
+    }
+
+
+}
+
 // Legacy setting for codec used to encode data with ${}
 grails.views.default.codec = "html"
 

@@ -33,13 +33,13 @@
                     <fieldset>
                         <div class="input-group input-group-lg">
                             <span class="input-group-addon"><i class="glyphicon glyphicon-user red"></i></span>
-                            <input name="usuario" type="text" class="form-control" value="" required="true">
+                            <input name="usuario" id="usuario" autofocus="" type="text" class="form-control" value="" required="true" placeholder="Usuário">
                         </div>
                         <div class="clearfix"></div><br>
 
                         <div class="input-group input-group-lg">
                             <span class="input-group-addon"><i class="glyphicon glyphicon-lock red"></i></span>
-                            <input name="senha" type="password" class="form-control" value="" required="true">
+                            <input name="senha" type="password" class="form-control" value="" required="true" placeholder="Senha">
                         </div>
                         <div class="clearfix"></div>
 
@@ -59,3 +59,9 @@
     </div><!--/fluid-row-->
 
 </div><!--/.fluid-container-->
+
+<script type="text/javascript">
+    function getfocus() {
+        document.getElementById("usuario").focus();
+    }
+</script>

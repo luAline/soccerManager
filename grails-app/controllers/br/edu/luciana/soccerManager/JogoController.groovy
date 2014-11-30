@@ -115,4 +115,10 @@ class JogoController {
         println("adicionarJogoSumula: "+params)
         return [listaTime:listaTime, jogoInstance: jogoInstance]
     }
+
+    def galeriaFotos(){
+
+    }
+
+
 }

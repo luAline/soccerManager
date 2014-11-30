@@ -64,3 +64,11 @@
         </div>
     </div>
 </div>
+<script type="text/javascript">
+    jQuery(document).ready(function($){
+        $('#index').dataTable( {
+            "pagingType": "full_numbers"
+        });
+
+    });
+</script>
