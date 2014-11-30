@@ -105,8 +105,14 @@ class JogoController {
     }
 
     def jogoSumula(){
-        def jogoInstance = Jogo.get(params.is)
+        def jogoInstance = Jogo.get(params.id)
 
         return [jogoInstance:jogoInstance]
+    }
+
+    def adicionarJogoSumula(){
+        def jogoInstance = Jogo.get(params.id)
+        println("adicionarJogoSumula: "+params)
+        return [listaTime:listaTime, jogoInstance: jogoInstance]
     }
 }

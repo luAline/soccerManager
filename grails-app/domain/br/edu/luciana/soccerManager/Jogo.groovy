@@ -11,9 +11,7 @@ class Jogo {
     Categoria categoria
     Local local
 
-    /*def getListaTime(){
-        Time.findAllByListaAlunos(this)
-    }*/
+
 
     String setDescricao( String s ){
         descricao = s?.toUpperCase()

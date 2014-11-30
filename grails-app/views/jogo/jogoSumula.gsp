@@ -38,6 +38,8 @@
         <div class="row">
             <div class="box col-md-12">
                 <div class="box-inner">
+                <g:form action="adicionarJogoSumula" method="POST">
+                    <g:hiddenField name="jogo" value="${jogoInstance?.id}"/>
 
                     <div class="box-header well">
                         <h2><i class="glyphicon glyphicon-picture"></i> <g:message code="default.show.label" args="[entityName]" /></h2>
@@ -98,8 +100,10 @@
                             </div>
                         </div>
                     </div>
-                     <hr>
-                     <g:render template="jogoSumulaLista"/>
+                    <hr>
+
+                </g:form>
+                     <g:render template="jogoSumulaLista" />
                 </div>
             </div>
         </div>
