@@ -1,16 +1,19 @@
 package br.edu.luciana.soccerManager
 
+import java.text.SimpleDateFormat
+
 class Jogo {
 
     String descricao
     String adversario
     Time time
-    Cartao cartao = Cartao.NENHUM
-    int falta
-    int gol
     Date dataJogo = new Date()
     Categoria categoria
     Local local
+
+    /*def getListaTime(){
+        Time.findAllByListaAlunos(this)
+    }*/
 
     String setDescricao( String s ){
         descricao = s?.toUpperCase()
@@ -19,13 +22,14 @@ class Jogo {
         adversario = s?.toUpperCase()
     }
 
+    String getDataJogoString(){ new SimpleDateFormat("dd/MM/yyyy").format(dataJogo) }
+
+
+
     static constraints = {
         descricao(nullable: true, blank: true)
         adversario(nullable: true, blank: true)
         time()
-        cartao(nullable: true, blank: true)
-        falta(nullable: true, blank: true)
-        gol(nullable: true, blank: true)
         dataJogo()
         categoria()
         local()

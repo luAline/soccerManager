@@ -35,7 +35,8 @@ class JogoController {
             return
         }
 
-        jogoInstance.save flush:true
+
+        jogoInstance.save (flush:true)
 
         request.withFormat {
             form multipartForm {
@@ -44,6 +45,7 @@ class JogoController {
             }
             '*' { respond jogoInstance, [status: CREATED] }
         }
+
     }
 
     def edit(Jogo jogoInstance) {
@@ -100,5 +102,11 @@ class JogoController {
             }
             '*'{ render status: NOT_FOUND }
         }
+    }
+
+    def jogoSumula(){
+        def jogoInstance = Jogo.get(params.is)
+
+        return [jogoInstance:jogoInstance]
     }
 }

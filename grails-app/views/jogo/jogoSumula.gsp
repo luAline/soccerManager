@@ -1,4 +1,3 @@
-
 <%@ page import="br.edu.luciana.soccerManager.Jogo" %>
 <meta name="layout" content="main">
 <g:set var="entityName" value="${message(code: 'jogo.label', default: 'Jogo')}" />
@@ -26,19 +25,12 @@
                     <g:message code="default.list.label" args="[entityName]" />
                 </button>
             </g:link>
-            <g:link controller="jogo" action="create">
-                <button class="btn btn-info">
-                    <i class="glyphicon glyphicon-plus icon-white"></i>
-                    <g:message code="default.new.label" args="[entityName]" />
-                </button>
-            </g:link>
-            <g:link controller="jogo" action="jogoSumula" id="${jogoInstance?.id}">
+            <g:link controller="jogo" action="show" id="${params.id}">
                 <button class="btn btn-default">
-                    <i class="glyphicon glyphicon-plus icon-white"></i>
-                    <g:message code="jogo.sumula" args="[entityName]" />
+                    <i class="glyphicon glyphicon-list icon-white"></i>
+                    <g:message code="soccerManager.voltar" args="[entityName]" />
                 </button>
             </g:link>
-
         </div>
     </div>
 
@@ -46,9 +38,11 @@
         <div class="row">
             <div class="box col-md-12">
                 <div class="box-inner">
+
                     <div class="box-header well">
                         <h2><i class="glyphicon glyphicon-picture"></i> <g:message code="default.show.label" args="[entityName]" /></h2>
                     </div>
+
                     <div class="row">
                         <div class="box-content">
                             <div class="form-group col-md-7">
@@ -104,22 +98,10 @@
                             </div>
                         </div>
                     </div>
-
-                    <div class="box-content">
-                        <div class="form-group">
-                            <g:form url="[resource:jogoInstance, action:'edit']">
-                                <g:actionSubmit class="edit btn btn-success col-lg-1" action="edit" id="${jogoInstance.id}" resource="${jogoInstance}" value="${message(code: 'default.button.edit.label', default: 'Edit')}"/>
-                            </g:form>
-
-                            <g:form url="[resource:jogoInstance, action:'delete']" method="DELETE">
-                                <g:actionSubmit class="delete btn btn-danger" action="delete" value="${message(code: 'default.button.delete.label', default: 'Delete')}" onclick="return confirm('${message(code: 'default.button.delete.confirm.message', default: 'Are you sure?')}');" />
-                            </g:form>
-                        </div>
-                    </div>
-                    </div>
+                     <hr>
+                     <g:render template="jogoSumulaLista"/>
                 </div>
             </div>
         </div>
     </div>
 </div>
-

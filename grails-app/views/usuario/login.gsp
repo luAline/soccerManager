@@ -15,7 +15,7 @@
 
         <div class="row">
             <div class="col-md-12 center login-header">
-                <h2>Welcome to Charisma</h2>
+                <h2>Bem vindo ao <g:message code="soccerManager.label"/> </h2>
             </div>
             <!--/span-->
         </div><!--/row-->
@@ -44,7 +44,7 @@
                         <div class="clearfix"></div>
 
                         <div class="input-prepend">
-                            <label class="remember" for="remember"><input type="checkbox" id="remember"> Remember me</label>
+                            <label class="remember" for="remember"><input type="checkbox" id="remember"> Lembrar</label>
                         </div>
                         <div class="clearfix"></div>
 

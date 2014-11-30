@@ -24,6 +24,5 @@ class Time {
 
     static mapping = {
         observacao type: 'text'
-        numeroCamisa length: 4
     }
 }

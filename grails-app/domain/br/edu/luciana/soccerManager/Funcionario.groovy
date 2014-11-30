@@ -45,6 +45,23 @@ class Funcionario {
     String getDataNascimentoString(){new SimpleDateFormat("dd/MM/yyyy").format(dataNascimento)}
     String getDataCadastroString(){new SimpleDateFormat("dd/MM/yyyy").format(dataCadastro)}
 
+
+    public static int calculaIdade(Date data){
+        Calendar dateOfBirth = new GregorianCalendar();
+        dateOfBirth.setTime(data);
+
+        // Cria um objeto calendar com a data atual
+        Calendar today = Calendar.getInstance();
+
+        // Obtém a idade baseado no ano
+        int age = today.get(Calendar.YEAR) - dateOfBirth.get(Calendar.YEAR);
+        dateOfBirth.add(Calendar.YEAR, age);
+        if (today.before(dateOfBirth)) {
+            age--;
+        }
+        return age;
+    }
+
     static constraints = {
         nome()
         dataNascimento()

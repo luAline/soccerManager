@@ -35,6 +35,7 @@ class FuncionarioController {
             return
         }
 
+        funcionarioInstance.idade = Funcionario.calculaIdade(funcionarioInstance.dataNascimento)
         funcionarioInstance.save flush: true
 
         request.withFormat {
@@ -62,6 +63,7 @@ class FuncionarioController {
             return
         }
 
+        funcionarioInstance.idade = Funcionario.calculaIdade(funcionarioInstance.dataNascimento)
         funcionarioInstance.save flush: true
 
         request.withFormat {

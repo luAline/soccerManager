@@ -1,121 +1,62 @@
 <%@ page import="br.edu.luciana.soccerManager.Jogo" %>
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta name="layout" content="main">
-		<g:set var="entityName" value="${message(code: 'jogo.label', default: 'Jogo')}" />
-		<title><g:message code="default.edit.label" args="[entityName]" /></title>
-	</head>
-	<body>
-		<a href="#edit-jogo" class="skip" tabindex="-1"><g:message code="default.link.skip.label" default="Skip to content&hellip;"/></a>
-		<div class="nav" role="navigation">
-			<ul>
-				<li><a class="home" href="${createLink(url: '../menu/telaInicio')}"><g:message code="default.home.label"/></a></li>
-				<li><g:link class="list" action="index"><g:message code="default.list.label" args="[entityName]" /></g:link></li>
-				<li><g:link class="create" action="create"><g:message code="default.new.label" args="[entityName]" /></g:link></li>
-			</ul>
-		</div>
-		<div id="edit-jogo" class="content scaffold-edit" role="main">
-			<h1><g:message code="default.edit.label" args="[entityName]" /></h1>
-			<g:if test="${flash.message}">
-			<div class="message" role="status">${flash.message}</div>
-			</g:if>
-			<g:hasErrors bean="${jogoInstance}">
-			<ul class="errors" role="alert">
-				<g:eachError bean="${jogoInstance}" var="error">
-				<li <g:if test="${error in org.springframework.validation.FieldError}">data-field-id="${error.field}"</g:if>><g:message error="${error}"/></li>
-				</g:eachError>
-			</ul>
-			</g:hasErrors>
-			<g:form url="[resource:jogoInstance, action:'update']" method="PUT" >
-				<g:hiddenField name="version" value="${jogoInstance?.version}" />
+<meta name="layout" content="main">
+<g:set var="entityName" value="${message(code: 'jogo.label', default: 'Jogo')}" />
 
-                <div class="fieldcontain ${hasErrors(bean: jogoInstance, field: 'descricao', 'error')} ">
-                    <label for="descricao">
-                        <g:message code="jogo.descricao.label" default="Descricao" />
+<div class="col-sm-10 col-lg-10">
+    <ul class="breadcrumb">
+        <li>
+            <a class="home" href="${createLink(url: '../menu/telaInicio')}"><g:message code="default.home.label"/></a>
+        </li>
+        <li><g:link class="list" action="index"><g:message code="default.list.label" args="[entityName]" /></g:link></li>
+        <li><g:message code="default.edit.label" args="[entityName]" /></li>
+    </ul>
+</div>
 
-                    </label>
-                    <g:textField name="descricao" value="${jogoInstance?.descricao}"/>
+<g:if test="${flash.message}">
+    <div class="message" role="status">${flash.message}</div>
+</g:if>
+<g:hasErrors bean="${jogoInstance}">
+    <ul class="errors" role="alert">
+        <g:eachError bean="${jogoInstance}" var="error">
+            <li <g:if test="${error in org.springframework.validation.FieldError}">data-field-id="${error.field}"</g:if>><g:message error="${error}"/></li>
+        </g:eachError>
+    </ul>
+</g:hasErrors>
 
+
+<div class="col-sm-10 col-lg-10">
+    <div class="row">
+        <div class="box col-md-12">
+            <g:link controller="jogo" action="index">
+                <button class="btn btn-default">
+                    <i class="glyphicon glyphicon-list icon-white"></i>
+                    <g:message code="default.list.label" args="[entityName]" />
+                </button>
+            </g:link>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="box col-md-12">
+            <div class="box-inner">
+                <div class="box-header well">
+                    <h2><i class="glyphicon glyphicon-picture"></i> <g:message code="default.edit.label" args="[entityName]" /></h2>
                 </div>
 
-                <div class="fieldcontain ${hasErrors(bean: jogoInstance, field: 'adversario', 'error')} ">
-                    <label for="adversario">
-                        <g:message code="jogo.adversario.label" default="Adversario" />
-
-                    </label>
-                    <g:textField name="adversario" value="${jogoInstance?.adversario}"/>
-
-                </div>
-
-                <div class="fieldcontain ${hasErrors(bean: jogoInstance, field: 'time', 'error')} required">
-                    <label for="time">
-                        <g:message code="jogo.time.label" default="Time" />
-                        <span class="required-indicator">*</span>
-                    </label>
-                    <g:select id="time" name="time.id" from="${br.edu.luciana.soccerManager.Time.list()}" optionKey="id" required="" value="${jogoInstance?.time?.id}" class="many-to-one"/>
-
-                </div>
-
-                <div class="fieldcontain ${hasErrors(bean: jogoInstance, field: 'cartao', 'error')} ">
-                    <label for="cartao">
-                        <g:message code="jogo.cartao.label" default="Cartao" />
-
-                    </label>
-                    <g:select name="cartao" from="${br.edu.luciana.soccerManager.Cartao?.values()}" keys="${br.edu.luciana.soccerManager.Cartao.values()*.name()}" value="${jogoInstance?.cartao?.name()}"  noSelection="['': '']"/>
-
-                </div>
-
-                <div class="fieldcontain ${hasErrors(bean: jogoInstance, field: 'falta', 'error')} required">
-                    <label for="falta">
-                        <g:message code="jogo.falta.label" default="Falta" />
-                        <span class="required-indicator">*</span>
-                    </label>
-                    <g:field name="falta" type="number" value="${jogoInstance.falta}" required=""/>
-
-                </div>
-
-                <div class="fieldcontain ${hasErrors(bean: jogoInstance, field: 'gol', 'error')} required">
-                    <label for="gol">
-                        <g:message code="jogo.gol.label" default="Gol" />
-                        <span class="required-indicator">*</span>
-                    </label>
-                    <g:field name="gol" type="number" value="${jogoInstance.gol}" required=""/>
-
-                </div>
-
-                <div class="fieldcontain ${hasErrors(bean: jogoInstance, field: 'dataJogo', 'error')} required">
-                    <label for="dataJogo">
-                        <g:message code="jogo.dataJogo.label" default="Data Jogo" />
-                        <span class="required-indicator">*</span>
-                    </label>
-                    <g:datePicker name="dataJogo" precision="day"  value="${jogoInstance?.dataJogo}"  />
-
-                </div>
-
-                <div class="fieldcontain ${hasErrors(bean: jogoInstance, field: 'categoria', 'error')} required">
-                    <label for="categoria">
-                        <g:message code="jogo.categoria.label" default="Categoria" />
-                        <span class="required-indicator">*</span>
-                    </label>
-                    <g:select id="categoria" name="categoria.id" from="${br.edu.luciana.soccerManager.Categoria.list()}" optionKey="id" required="" value="${jogoInstance?.categoria?.id}" class="many-to-one"/>
-
-                </div>
-
-                <div class="fieldcontain ${hasErrors(bean: jogoInstance, field: 'local', 'error')} required">
-                    <label for="local">
-                        <g:message code="jogo.local.label" default="Local" />
-                        <span class="required-indicator">*</span>
-                    </label>
-                    <g:select id="local" name="local.id" from="${br.edu.luciana.soccerManager.Local.list()}" optionKey="id" required="" value="${jogoInstance?.local?.id}" class="many-to-one"/>
-
-                </div>
-
-
-				<fieldset class="buttons">
-					<g:actionSubmit class="save" action="update" value="${message(code: 'default.button.update.label', default: 'Update')}" />
-				</fieldset>
-			</g:form>
-		</div>
-	</body>
-</html>
+                <g:form url="[resource:jogoInstance, action:'update']" method="PUT" >
+                    <g:hiddenField name="version" value="${jogoInstance?.version}" />
+                    <div class="box-content">
+                        <div class="form-group">
+                            <g:render template="form"/>
+                        </div>
+                    </div>
+                    <div class="box-content">
+                        <div class="form-group">
+                            <g:actionSubmit class="save btn btn-primary" action="update" value="${message(code: 'default.button.update.label', default: 'Update')}" />
+                        </div>
+                    </div>
+                </g:form>
+            </div>
+        </div>
+    </div>
+</div>

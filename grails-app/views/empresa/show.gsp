@@ -108,7 +108,7 @@
                                     <g:message code="soccerManager.telefone" default="Telefone" />
                                     <span class="required-indicator">*</span>
                                 </label>
-                                <g:field name="telefone" type="number" class="form-control" value="${empresaInstance.telefone}" readonly="true"/>
+                                <g:field name="telefone" class="form-control" value="${empresaInstance.telefone}" readonly="true"/>
                             </div>
 
                             <div class="form-group col-md-3">

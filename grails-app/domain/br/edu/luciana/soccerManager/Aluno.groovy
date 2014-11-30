@@ -76,33 +76,19 @@ class Aluno {
     }
 
     public static int calculaIdade(Date data){
-
-
-
         Calendar dateOfBirth = new GregorianCalendar();
-
         dateOfBirth.setTime(data);
 
-// Cria um objeto calendar com a data atual
-
+        // Cria um objeto calendar com a data atual
         Calendar today = Calendar.getInstance();
 
-// Obtém a idade baseado no ano
-
+        // Obtém a idade baseado no ano
         int age = today.get(Calendar.YEAR) - dateOfBirth.get(Calendar.YEAR);
-
-
-
         dateOfBirth.add(Calendar.YEAR, age);
-
         if (today.before(dateOfBirth)) {
-
             age--;
-
         }
-
         return age;
-
     }
 
 

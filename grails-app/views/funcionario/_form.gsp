@@ -33,7 +33,7 @@
             <g:datePicker name="dataCadastro" precision="day" value="${funcionarioInstance?.dataCadastro}"/>
         </div>
 
-        <div class="form-group col-md-1">
+        <div class="form-group col-md-1 hidden">
             <label for="idade">
                 <g:message code="soccerManager.idade" default="Idade" />
             </label>
@@ -133,14 +133,12 @@
                 <g:textField class="form-control" name="cep" value="${funcionarioInstance?.cep}"/>
             </div>
 
-            <div class="form-group col-md-3">
-                <label class="control-label" for="cidade">
+            <div class="form-group col-md-2">
+                <label for="cidade">
                     <g:message code="cidade.label" default="Cidade" />
-                    <span class="required-indicator">*</span>
+
                 </label>
-                <div class="controls">
-                    <g:select name="cidade" id="cidade" data-rel="chosen" from="${br.edu.luciana.soccerManager.Cidade.list()}"  required="" value="${funcionarioInstance?.cidade}" class="form-control many-to-one"/>
-                </div>
+                <g:select id="cidade" name="cidade" from="${br.edu.luciana.soccerManager.Cidade.list()}" optionKey="id" value="${funcionarioInstance?.cidade?.id}" class="form-control many-to-one" noSelection="['null': 'TODOS']"/>
             </div>
         </div>
     </div>

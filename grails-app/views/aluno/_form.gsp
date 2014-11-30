@@ -68,7 +68,7 @@
                     <g:message code="funcionario.sexo" default="Sexo" />
                     <span class="required-indicator">*</span>
                 </label>
-                <g:select name="sexo" class="form-control" from="${br.edu.luciana.soccerManager.Sexo?.values()}" keys="${br.edu.luciana.soccerManager.Sexo.values()*.name()}" required="" value="${alunoInstance?.sexo?.name()}" />
+                <g:select name="sexo" class="form-control" from="${br.edu.luciana.soccerManager.Sexo?.values()}" keys="${br.edu.luciana.soccerManager.Sexo.values()*.name()}" required="" value="${alunoInstance?.sexo?.name()}" noSelection="['null': 'TODOS']"/>
             </div>
             <div class="form-group col-md-2">
                 <label for="categoria">

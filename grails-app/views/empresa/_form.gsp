@@ -63,7 +63,7 @@
                     <g:message code="soccerManager.telefone" default="Telefone" />
                     <span class="required-indicator">*</span>
                 </label>
-                <g:field name="telefone" type="number" class="form-control" value="${empresaInstance.telefone}" required=""/>
+                <g:field name="telefone" class="form-control" value="${empresaInstance.telefone}" required=""/>
             </div>
 
             <div class="form-group col-md-3">
@@ -131,13 +131,12 @@
             </div>
 
             <div class="form-group col-md-3">
-                <label class="control-label" for="cidade">
+                <label for="cidade">
                     <g:message code="cidade.label" default="Cidade" />
-                    <span class="required-indicator">*</span>
+
                 </label>
-                <div class="controls">
-                    <g:select name="cidade" id="cidade" data-rel="chosen" from="${br.edu.luciana.soccerManager.Cidade.list()}"  required="" value="${empresaInstance?.cidade}" class="form-control many-to-one"/>
-                </div>
+                <g:select id="cidade" name="cidade" from="${br.edu.luciana.soccerManager.Cidade.list()}" optionKey="id" value="${empresaInstance?.cidade?.id}" class="form-control many-to-one" noSelection="['null': 'TODOS']"/>
+
             </div>
         </div>
     </div>

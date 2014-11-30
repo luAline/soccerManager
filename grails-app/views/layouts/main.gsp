@@ -21,7 +21,6 @@
     <link rel="stylesheet" href="${resource(dir: 'css', file: 'bootstrap.css.map')}" type="text/css">
     <link rel="stylesheet" href="${resource(dir: 'css', file: 'bootstrap.min.css')}" type="text/css">
     <link rel="stylesheet" href="${resource(dir: 'css', file: 'bootstrap-cerulean.min.css')}" type="text/css">
-    <link rel="stylesheet" href="${resource(dir: 'css', file: 'bootstrap-spacelab.min.css')}" type="text/css">
     <link rel="stylesheet" href="${resource(dir: 'css', file: 'charisma-app.css')}" type="text/css">
     <link rel="stylesheet" href="${resource(dir: 'css', file: 'chosen.css')}" type="text/css">
     <link rel="stylesheet" href="${resource(dir: 'css', file: 'chosen.min.css')}" type="text/css">
@@ -53,6 +52,7 @@
     <script src="${resource(dir: 'js', file: 'charisma.js')}" type="text/javascript"></script>
     <script src="${resource(dir: 'js', file: 'jquery.js')}" type="text/javascript"></script>
     <script src="${resource(dir: 'js', file: 'jquery-migrate.js')}" type="text/javascript"></script>
+    <script src="${resource(dir: 'js', file: 'tooltip.js')}" type="text/javascript"></script>
 
     <script src="${resource(dir: 'js', file: 'affix.js')}" type="text/javascript"></script>
     <script src="${resource(dir: 'js', file: 'app.js')}" type="text/javascript"></script>
@@ -107,8 +107,6 @@
                     <span class="caret"></span>
                 </button>
                 <ul class="dropdown-menu">
-                    <li><a href="#">Profile</a></li>
-                    <li class="divider"></li>
                     <li><g:link controller="usuario" action="fazerLogout">Logout</g:link></li>
                 </ul>
             </div>

@@ -15,7 +15,7 @@
 
         <tr>
             <th>
-            <g:link action="montarTime" id="${timeInstance.id}" params="${['timeAluno':timeAlunoInstance.id]}"><i class="glyphicon glyphicon-pencil green"></i></g:link>
+                <g:link action="montarTime" id="${timeInstance.id}" params="${['timeAluno':timeAlunoInstance.id]}"><i class="glyphicon glyphicon-pencil green"></i></g:link>
                 <g:link action="retirarAluno" id="${timeAlunoInstance.id}"><i class="glyphicon glyphicon-trash red"></i></g:link>
             </th>
             <th>${timeAlunoInstance.aluno}</th>
