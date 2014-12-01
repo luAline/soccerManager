@@ -70,6 +70,137 @@
                         </div>
                     </div>
 
+                    <h4>Liberação Perfil</h4>
+                    <h5>Cadastro</h5>
+
+                    <div class="row">
+                        <div class="box-content">
+                            <div class="form-group col-md-2">
+                                <label for="aluno">
+                                    <g:message code="aluno.label" default="Aluno" />
+
+                                </label>
+                                <g:checkBox name="aluno" disabled="true" value="true" />
+                            </div>
+
+                            <div class="form-group col-md-2">
+                                <label for="categoria">
+                                    <g:message code="categoria.label" default="Categoria" />
+
+                                </label>
+                                <g:checkBox name="categoria" disabled="true" value="true" />
+                            </div>
+
+                            <div class="form-group col-md-2">
+                                <label for="funcionario">
+                                    <g:message code="funcionario.label" default="Funcionário" />
+
+                                </label>
+                                <g:checkBox name="funcionario" disabled="true" value="true" />
+                            </div>
+
+                            <div class="form-group col-md-2">
+                                <label for="funcao">
+                                    <g:message code="funcao.label" default="Função" />
+
+                                </label>
+                                <g:checkBox name="funcao" disabled="true" value="true" />
+                            </div>
+
+                            <div class="form-group col-md-2">
+                                <label for="cidade">
+                                    <g:message code="cidade.label" default="Cidade" />
+
+                                </label>
+                                <g:checkBox name="cidade" disabled="true" value="true" />
+                            </div>
+
+                            <div class="form-group col-md-2">
+                                <label for="estado">
+                                    <g:message code="estado.label" default="Estado" />
+
+                                </label>
+                                <g:checkBox name="estado" disabled="true" value="true" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="box-content">
+                            <div class="form-group col-md-2">
+                                <label for="pais">
+                                    <g:message code="pais.label" default="País" />
+
+                                </label>
+                                <g:checkBox name="pais" disabled="true" value="true" />
+                            </div>
+                        </div>
+                    </div>
+                    <h5>Competições</h5>
+                    <div class="row">
+                        <div class="box-content">
+                            <div class="form-group col-md-2">
+                                <label for="time">
+                                    <g:message code="time.label" default="Time" />
+
+                                </label>
+                                <g:checkBox name="time" disabled="true" value="true" />
+                            </div>
+
+                            <div class="form-group col-md-2">
+                                <label for="jogo">
+                                    <g:message code="jogo.label" default="Jogo" />
+
+                                </label>
+                                <g:checkBox name="jogo" disabled="true" value="true" />
+                            </div>
+
+                            <div class="form-group col-md-2">
+                                <label for="calendario">
+                                    <g:message code="calendario.label" default="Calendário" />
+
+                                </label>
+                                <g:checkBox name="calendario" disabled="true" value="true" />
+                            </div>
+
+                            <div class="form-group col-md-2">
+                                <label for="local">
+                                    <g:message code="local.label" default="Local" />
+
+                                </label>
+                                <g:checkBox name="local" disabled="true" value="true" />
+                            </div>
+
+                            <div class="form-group col-md-2">
+                                <label for="galeriaFotos">
+                                    <g:message code="jogo.galeriaFoto" default="Galeria de Fotos" />
+
+                                </label>
+                                <g:checkBox name="galeriaFotos" disabled="true" value="true" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <h5>Configurações</h5>
+                    <div class="row">
+                        <div class="box-content">
+                            <div class="form-group col-md-2">
+                                <label for="usuario">
+                                    <g:message code="usuario.label" default="Usuário" />
+
+                                </label>
+                                <g:checkBox name="usuario" disabled="true" value="true" />
+                            </div>
+
+                            <div class="form-group col-md-2">
+                                <label for="empresa">
+                                    <g:message code="empresa.label" default="Empresa" />
+
+                                </label>
+                                <g:checkBox name="empresa" disabled="true" value="true" />
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

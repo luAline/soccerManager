@@ -1,7 +1,7 @@
 
 <%@ page import="br.edu.luciana.soccerManager.Calendario" %>
 <meta name="layout" content="main">
-<g:set var="entityName" value="${message(code: 'calendario.label', default: 'Calendario')}" />
+<g:set var="entityName" value="${message(code: 'calendario.evento', default: 'Evento')}" />
 
 <div class="col-sm-10 col-lg-10">
     <ul class="breadcrumb">
@@ -23,7 +23,7 @@
             <g:link controller="calendario" action="calendario">
                 <button class="btn btn-default">
                     <i class="glyphicon glyphicon-list icon-white"></i>
-                    <g:message code="default.list.label" args="[entityName]" />
+                    <g:message code="calendario.label" />
                 </button>
             </g:link>
             <g:link controller="calendario" action="create">
@@ -76,7 +76,7 @@
                                     <g:message code="data.inicial" default="Data Inicial" />
 
                                 </label>
-                                <g:textField name="dataInicial" class="form-control" readonly="true" value="${calendarioInstance?.dataInicial}"/>
+                                <g:textField name="dataInicial" class="form-control" readonly="true" value="${calendarioInstance?.dataInicialString}"/>
                             </div>
 
                             <div class="form-group col-md-3">
@@ -84,20 +84,25 @@
                                     <g:message code="data.final" default="Data Final" />
 
                                 </label>
-                                <g:textField name="dataFinal" class="form-control" readonly="true" value="${calendarioInstance?.dataFinal}"/>
+                                <g:textField name="dataFinal" class="form-control" readonly="true" value="${calendarioInstance?.dataFinalString}"/>
                             </div>
                         </div>
                     </div>
 
-                    <g:form url="[resource:calendarioInstance, action:'delete']" method="DELETE">
-                        <g:form url="[resource:calendarioInstance, action:'edit']">
-                            <g:actionSubmit class="edit btn btn-success col-lg-1" action="edit" id="${calendarioInstance.id}" resource="${calendarioInstance}" value="${message(code: 'default.button.edit.label', default: 'Edit')}"/>
-                        </g:form>
+                    <div class="box-content">
+                        <div class="form-group">
+                            <g:form url="[resource:calendarioInstance, action:'delete']" method="DELETE">
+                                <g:form url="[resource:calendarioInstance, action:'edit']">
+                                    <g:actionSubmit class="edit btn btn-success col-lg-1" action="edit" id="${calendarioInstance.id}" resource="${calendarioInstance}" value="${message(code: 'default.button.edit.label', default: 'Edit')}"/>
+                                </g:form>
 
-                        <g:form url="[resource:calendarioInstance, action:'delete']" method="DELETE">
-                            <g:actionSubmit class="delete btn btn-danger" action="delete" value="${message(code: 'default.button.delete.label', default: 'Delete')}" onclick="return confirm('${message(code: 'default.button.delete.confirm.message', default: 'Are you sure?')}');" />
-                        </g:form>
-                    </g:form>
+                                <g:form url="[resource:calendarioInstance, action:'delete']" method="DELETE">
+                                    <g:actionSubmit class="delete btn btn-danger" action="delete" value="${message(code: 'default.button.delete.label', default: 'Delete')}" onclick="return confirm('${message(code: 'default.button.delete.confirm.message', default: 'Are you sure?')}');" />
+                                </g:form>
+                            </g:form>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>

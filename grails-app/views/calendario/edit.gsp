@@ -1,6 +1,6 @@
 <%@ page import="br.edu.luciana.soccerManager.Calendario" %>
 <meta name="layout" content="main">
-<g:set var="entityName" value="${message(code: 'calendario.label', default: 'Calendario')}" />
+<g:set var="entityName" value="${message(code: 'calendario.evento', default: 'Evento')}" />
 
 <div class="col-sm-10 col-lg-10">
     <ul class="breadcrumb">
@@ -29,7 +29,7 @@
             <g:link controller="calendario" action="calendario">
                 <button class="btn btn-default">
                     <i class="glyphicon glyphicon-list icon-white"></i>
-                    <g:message code="default.list.label" args="[entityName]" />
+                    <g:message code="calendario.label" />
                 </button>
             </g:link>
         </div>

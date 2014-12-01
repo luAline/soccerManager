@@ -23,7 +23,7 @@
             <g:link controller="calendario" action="create">
                 <button class="btn btn-info">
                     <i class="glyphicon glyphicon-plus icon-white"></i>
-                    <g:message code="default.new.label" args="[entityName]" />
+                    <g:message code="calendario.evento" args="[entityName]" />
                 </button>
             </g:link>
         </div>

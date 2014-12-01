@@ -1,5 +1,7 @@
 package br.edu.luciana.soccerManager
 
+import java.text.SimpleDateFormat
+
 class Calendario {
 
     String titulo
@@ -8,7 +10,20 @@ class Calendario {
     Date dataInicial
     Date dataFinal
 
+    String toString(){
+        titulo
+    }
 
+    String setTitulo( String s ){
+        titulo = s?.toUpperCase()
+    }
+
+    String setDescricao( String s ){
+        descricao = s?.toUpperCase()
+    }
+
+    String getDataInicialString(){new SimpleDateFormat("dd/MM/yyyy").format(dataInicial)}
+    String getDataFinalString(){new SimpleDateFormat("dd/MM/yyyy").format(dataFinal)}
 
     static constraints = {
         titulo(nullable: true, blank: true)

@@ -30,15 +30,14 @@
                     <g:message code="data.inicial" default="Data Inicial" />
 
                 </label>
-                <g:textField name="dataInicial" class="form-control data" value="${formatDate(format: "dd/MM/yyyy", date: calendarioInstance?.dataInicial)}"/>
-                <g:datePicker name="myDate" value="${new Date()}" precision="day" years="${1930..1970}"/>
+                <g:datePicker name="dataInicial" value="${calendarioInstance?.dataInicial}" precision="day" years="${1970..2020}"/>
             </div>
             <div class="form-group col-md-3">
                 <label for="dataFinal">
                     <g:message code="data.final" default="Data Final" />
 
                 </label>
-                <g:textField name="dataFinal" class="form-control data" value="${formatDate(format: "dd/MM/yyyy", calendarioInstance?.dataFinal)}"/>
+                <g:datePicker name="dataFinal" value="${calendarioInstance?.dataFinal}" precision="day" years="${1970..2020}"/>
             </div>
         </div>
 
