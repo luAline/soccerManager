@@ -1,9 +1,5 @@
 <!DOCTYPE html>
-<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
-<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
-<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
-<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
-<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"><!--<![endif]-->
+<html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -28,9 +24,9 @@
     <link rel="stylesheet" href="${resource(dir: 'css', file: 'elfinder.theme.css')}" type="text/css">
     <link rel="stylesheet" href="${resource(dir: 'css', file: 'errors.css')}" type="text/css">
     <link rel="stylesheet" href="${resource(dir: 'css', file: 'forms.css')}" type="text/css">
-    <link rel="stylesheet" href="${resource(dir: 'css', file: 'fullcalendar.css')}" type="text/css">
+    <link rel="stylesheet" href="${resource(dir: 'css', file: 'fullcalendar.css')}" type="text/css"/>
     <link rel="stylesheet" href="${resource(dir: 'css', file: 'fullcalendar.min.css')}" type="text/css">
-    <link rel="stylesheet" href="${resource(dir: 'css', file: 'fullcalendar.print.css')}" type="text/css">
+    <link rel="stylesheet" href="${resource(dir: 'css', file: 'fullcalendar.print.css')}" media="print">
     <link rel="stylesheet" href="${resource(dir: 'css', file: 'globals.css')}" type="text/css">
     <link rel="stylesheet" href="${resource(dir: 'css', file: 'ie.css')}" type="text/css">
     <link rel="stylesheet" href="${resource(dir: 'css', file: 'jquery.noty.css')}" type="text/css">
@@ -83,6 +79,7 @@
     <script src="${resource(dir: 'js', file: 'popover.js')}" type="text/javascript"></script>
     <script src="${resource(dir: 'js', file: 'responsive-tables.js')}" type="text/javascript"></script>
     <script src="${resource(dir: 'js', file: 'transition.js')}" type="text/javascript"></script>
+    <script src="${resource(dir: 'js', file: 'lang-all.js')}" type="text/javascript"></script>
 
 
 		<g:layoutHead/>

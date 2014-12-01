@@ -1,16 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="397ca0e3-d8e0-4ee8-ad66-b32674269adc" name="Default" comment="inclusão do calendar">
+    <list default="true" id="397ca0e3-d8e0-4ee8-ad66-b32674269adc" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/lang-all.js" />
+      <change type="DELETED" beforePath="C:\TCC\IntelliJ\SoccerManager\soccerManager" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/conf/Config.groovy" afterPath="$PROJECT_DIR$/grails-app/conf/Config.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/calendario/calendario.gsp" afterPath="$PROJECT_DIR$/grails-app/views/calendario/calendario.gsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/css/fullcalendar.css" afterPath="$PROJECT_DIR$/web-app/css/fullcalendar.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/layouts/main.gsp" afterPath="$PROJECT_DIR$/grails-app/views/layouts/main.gsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="SoccerManager.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$USER_HOME$/.grails/" />
     <file path="/messages_pt_BR.properties" changelist="397ca0e3-d8e0-4ee8-ad66-b32674269adc" time="1417370625284" ignored="false" />
-    <file path="/main.gsp" changelist="397ca0e3-d8e0-4ee8-ad66-b32674269adc" time="1417374731308" ignored="false" />
-    <file path="/Dummy.txt" changelist="397ca0e3-d8e0-4ee8-ad66-b32674269adc" time="1417398902090" ignored="false" />
-    <file path="/a.dummy" changelist="397ca0e3-d8e0-4ee8-ad66-b32674269adc" time="1417374926633" ignored="false" />
+    <file path="/main.gsp" changelist="397ca0e3-d8e0-4ee8-ad66-b32674269adc" time="1417409014301" ignored="false" />
+    <file path="/Dummy.txt" changelist="397ca0e3-d8e0-4ee8-ad66-b32674269adc" time="1417405274606" ignored="false" />
+    <file path="/a.dummy" changelist="397ca0e3-d8e0-4ee8-ad66-b32674269adc" time="1417405272944" ignored="false" />
     <file path="/Login.groovy" changelist="397ca0e3-d8e0-4ee8-ad66-b32674269adc" time="1412825436664" ignored="false" />
     <file path="$PROJECT_DIR$/test/unit/br/edu/luciana/soccerManager/LoginControllerSpec.groovy" changelist="397ca0e3-d8e0-4ee8-ad66-b32674269adc" time="1412825494944" ignored="false" />
     <file path="/LoginController.groovy" changelist="397ca0e3-d8e0-4ee8-ad66-b32674269adc" time="1412825680631" ignored="false" />
@@ -77,12 +83,13 @@
     <file path="/JogoController.groovy" changelist="397ca0e3-d8e0-4ee8-ad66-b32674269adc" time="1417326140904" ignored="false" />
     <file path="/_jogoSumulaLista.gsp" changelist="397ca0e3-d8e0-4ee8-ad66-b32674269adc" time="1417327031576" ignored="false" />
     <file path="/galeriaFotos.gsp" changelist="397ca0e3-d8e0-4ee8-ad66-b32674269adc" time="1417360335467" ignored="false" />
-    <file path="/calendario.gsp" changelist="397ca0e3-d8e0-4ee8-ad66-b32674269adc" time="1417378781290" ignored="false" />
+    <file path="/calendario.gsp" changelist="397ca0e3-d8e0-4ee8-ad66-b32674269adc" time="1417408885819" ignored="false" />
     <file path="/Calendario.groovy" changelist="397ca0e3-d8e0-4ee8-ad66-b32674269adc" time="1417365018751" ignored="false" />
     <file path="/Config.groovy" changelist="397ca0e3-d8e0-4ee8-ad66-b32674269adc" time="1417374881209" ignored="false" />
     <file path="$PROJECT_DIR$/test/unit/br/edu/luciana/soccerManager/CalendarioControllerSpec.groovy" changelist="397ca0e3-d8e0-4ee8-ad66-b32674269adc" time="1417365989529" ignored="false" />
     <file path="/jquery-ui.css" changelist="397ca0e3-d8e0-4ee8-ad66-b32674269adc" time="1417368409900" ignored="false" />
     <file path="/fullcalendar.css" changelist="397ca0e3-d8e0-4ee8-ad66-b32674269adc" time="1417375855659" ignored="false" />
+    <file path="/fullcalendar.min.js" changelist="397ca0e3-d8e0-4ee8-ad66-b32674269adc" time="1417403113539" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -143,25 +150,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="messages_pt_BR.properties" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/i18n/messages_pt_BR.properties">
-          <provider editor-type-id="ResourceBundle">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="185" column="24" selection-start="5840" selection-end="5840" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Calendario.groovy" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grails-app/domain/br/edu/luciana/soccerManager/Calendario.groovy">
           <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="6" selection-start="44" selection-end="44" vertical-scroll-proportion="0.0">
+            <state line="2" column="6" selection-start="44" selection-end="44" vertical-scroll-proportion="-0.35416666">
               <folding />
             </state>
           </provider>
@@ -179,7 +174,7 @@
       <file leaf-file-name="_form.gsp" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grails-app/views/calendario/_form.gsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="66" selection-start="1671" selection-end="1671" vertical-scroll-proportion="0.0">
+            <state line="25" column="224" selection-start="1027" selection-end="1235" vertical-scroll-proportion="-4.857143">
               <folding />
             </state>
           </provider>
@@ -188,26 +183,44 @@
       <file leaf-file-name="calendario.gsp" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grails-app/views/calendario/calendario.gsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="64" selection-start="1458" selection-end="1458" vertical-scroll-proportion="-6.7959185">
+            <state line="184" column="8" selection-start="5641" selection-end="5641" vertical-scroll-proportion="-9.755102">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Config.groovy" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/conf/Config.groovy">
+      <file leaf-file-name="main.gsp" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/grails-app/views/layouts/main.gsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="125" column="11" selection-start="4930" selection-end="4930" vertical-scroll-proportion="0.0">
+            <state line="1" column="6" selection-start="22" selection-end="22" vertical-scroll-proportion="-8.253086">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="changelog.groovy" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/grails-app/migrations/changelog.groovy">
+      <file leaf-file-name="fullcalendar.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web-app/js/fullcalendar.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="11" selection-start="98" selection-end="98" vertical-scroll-proportion="0.1461318">
-              <folding />
+            <state line="149" column="5" selection-start="3045" selection-end="3322" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+                <marker date="1407225724000" expanded="false" signature="25441:25451" placeholder="..." />
+                <marker date="1407225724000" expanded="false" signature="74753:74793" placeholder="..." />
+                <marker date="1407225724000" expanded="false" signature="75899:75909" placeholder="..." />
+                <marker date="1407225724000" expanded="false" signature="78068:78085" placeholder="..." />
+                <marker date="1407225724000" expanded="false" signature="89841:89886" placeholder="..." />
+                <marker date="1407225724000" expanded="false" signature="90022:90062" placeholder="..." />
+                <marker date="1407225724000" expanded="false" signature="90124:90134" placeholder="..." />
+                <marker date="1407225724000" expanded="false" signature="90397:90414" placeholder="..." />
+                <marker date="1407225724000" expanded="false" signature="90941:91003" placeholder="..." />
+                <marker date="1407225724000" expanded="false" signature="91076:91120" placeholder="..." />
+                <marker date="1407225724000" expanded="false" signature="91230:91270" placeholder="..." />
+                <marker date="1407225724000" expanded="false" signature="91357:91367" placeholder="..." />
+                <marker date="1407225724000" expanded="false" signature="92000:92017" placeholder="..." />
+                <marker date="1407225724000" expanded="false" signature="93161:93171" placeholder="..." />
+                <marker date="1407225724000" expanded="false" signature="95245:95262" placeholder="..." />
+                <marker date="1407225724000" expanded="false" signature="175400:175427" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -215,20 +228,10 @@
       <file leaf-file-name="fullcalendar.min.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web-app/js/fullcalendar.min.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="fullcalendar.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web-app/css/fullcalendar.css">
-          <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="154" column="34" selection-start="3203" selection-end="3203" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="653" column="394" selection-start="26956" selection-end="26956" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -251,22 +254,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/grails-app/controllers/br/edu/luciana/soccerManager/JogoController.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/controllers/br/edu/luciana/soccerManager/CalendarioController.groovy" />
         <option value="$PROJECT_DIR$/web-app/js/jquery-ui.js" />
         <option value="$PROJECT_DIR$/web-app/css/jquery-ui.css" />
         <option value="$PROJECT_DIR$/grails-app/i18n/messages_pt_BR.properties" />
         <option value="$PROJECT_DIR$/grails-app/views/calendario/show.gsp" />
         <option value="$PROJECT_DIR$/grails-app/views/calendario/edit.gsp" />
         <option value="$PROJECT_DIR$/grails-app/views/calendario/create.gsp" />
-        <option value="$PROJECT_DIR$/web-app/js/fullcalendar.min.js" />
         <option value="$PROJECT_DIR$/web-app/css/fullcalendar.min.css" />
-        <option value="$PROJECT_DIR$/grails-app/views/layouts/main.gsp" />
-        <option value="$PROJECT_DIR$/web-app/css/calendar.css" />
         <option value="$PROJECT_DIR$/web-app/css/fullcalendar.css" />
-        <option value="$PROJECT_DIR$/grails-app/conf/Config.groovy" />
         <option value="$PROJECT_DIR$/grails-app/views/calendario/_form.gsp" />
+        <option value="$PROJECT_DIR$/web-app/js/fullcalendar/gcal.js" />
+        <option value="$PROJECT_DIR$/web-app/css/calendar.css" />
+        <option value="$PROJECT_DIR$/web-app/js/fullcalendar.min.js" />
+        <option value="$PROJECT_DIR$/grails-app/conf/Config.groovy" />
+        <option value="$PROJECT_DIR$/web-app/js/lang-all.js" />
         <option value="$PROJECT_DIR$/grails-app/views/calendario/calendario.gsp" />
+        <option value="$PROJECT_DIR$/grails-app/views/layouts/main.gsp" />
       </list>
     </option>
   </component>
@@ -516,7 +519,11 @@
       <created>1417327174463</created>
       <updated>1417327174463</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="teste">
+      <created>1417399038172</created>
+      <updated>1417399038172</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -543,35 +550,35 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32879046" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3100511" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
-      <window_info id="Grails View" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18636364" sideWeight="0.67232597" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40715504" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32879046" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18787879" sideWeight="0.21465077" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32767403" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24924242" sideWeight="0.6780239" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32767403" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24924242" sideWeight="0.6746167" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3344652" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4074703" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33730835" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3253833" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="Grails View" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18636364" sideWeight="0.66269165" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18787879" sideWeight="0.21465077" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24924242" sideWeight="0.6780239" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39863715" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3253833" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -616,7 +623,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="inclusão do calendar" />
+    <option name="LAST_COMMIT_MESSAGE" value="teste" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -630,7 +637,6 @@
     <option name="UPDATE_FILTER_BY_SCOPE" value="false" />
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
-    <MESSAGE value="teste" />
     <MESSAGE value="teste luciana" />
     <MESSAGE value="alterações em aluno" />
     <MESSAGE value="novas inserções, semana, e telas em aluno" />
@@ -638,6 +644,7 @@
     <MESSAGE value="alterações em time" />
     <MESSAGE value="alterações em jogo" />
     <MESSAGE value="inclusão do calendar" />
+    <MESSAGE value="teste" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -647,39 +654,18 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/grails-app/views/calendario/edit.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="0" selection-start="2558" selection-end="2558" vertical-scroll-proportion="0.7624751" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/calendario/create.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="0" selection-start="2411" selection-end="2411" vertical-scroll-proportion="0.7285429" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/calendario/show.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="99" column="98" selection-start="5103" selection-end="5103" vertical-scroll-proportion="3.3592815" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/categoria/index.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="16" selection-start="1333" selection-end="1358" vertical-scroll-proportion="0.44111776" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web-app/css/fullcalendar.print.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web-app/css/fullcalendar.min.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="5" selection-start="216" selection-end="216" vertical-scroll-proportion="0.45293072" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/layouts/main.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="71" selection-start="2146" selection-end="2158" vertical-scroll-proportion="-8.076923" />
+        <state line="15" column="5" selection-start="216" selection-end="216" vertical-scroll-proportion="0.45293072">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/domain/br/edu/luciana/soccerManager/Calendario.groovy">
@@ -687,24 +673,7 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="6" selection-start="44" selection-end="44" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web-app/css/fullcalendar.css">
-      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="154" column="34" selection-start="3203" selection-end="3203" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web-app/js/fullcalendar.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="2" column="6" selection-start="44" selection-end="44" vertical-scroll-proportion="-0.35416666">
           <folding />
         </state>
       </provider>
@@ -716,13 +685,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/calendario/_form.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="66" selection-start="1671" selection-end="1671" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/idea.jar!/resources/html5-schema/phrase.rnc">
       <provider selected="true" editor-type-id="text-editor">
         <state line="308" column="23" selection-start="5646" selection-end="5646" vertical-scroll-proportion="0.33333334">
@@ -730,23 +692,102 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/calendario/calendario.gsp">
+    <entry file="file://$PROJECT_DIR$/grails-app/migrations/changelog.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="64" selection-start="1458" selection-end="1458" vertical-scroll-proportion="-6.7959185">
+        <state line="3" column="11" selection-start="98" selection-end="98" vertical-scroll-proportion="0.14697406">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/i18n/messages_pt_BR.properties">
+      <provider editor-type-id="ResourceBundle">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="185" column="24" selection-start="5840" selection-end="5840" vertical-scroll-proportion="-0.68">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-app/js/fullcalendar.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="653" column="394" selection-start="26956" selection-end="26956" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/idea.jar!/resources/html5-schema/block.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="179" column="22" selection-start="3387" selection-end="3387" vertical-scroll-proportion="0.33333334">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/work/plugins/resources-1.2.8/grails-app/taglib/org/grails/plugin/resource/ResourceTagLib.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="422" column="0" selection-start="15012" selection-end="15012" vertical-scroll-proportion="0.33142856">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-app/js/fullcalendar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="149" column="5" selection-start="3045" selection-end="3322" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <marker date="1407225724000" expanded="false" signature="25441:25451" placeholder="..." />
+            <marker date="1407225724000" expanded="false" signature="74753:74793" placeholder="..." />
+            <marker date="1407225724000" expanded="false" signature="75899:75909" placeholder="..." />
+            <marker date="1407225724000" expanded="false" signature="78068:78085" placeholder="..." />
+            <marker date="1407225724000" expanded="false" signature="89841:89886" placeholder="..." />
+            <marker date="1407225724000" expanded="false" signature="90022:90062" placeholder="..." />
+            <marker date="1407225724000" expanded="false" signature="90124:90134" placeholder="..." />
+            <marker date="1407225724000" expanded="false" signature="90397:90414" placeholder="..." />
+            <marker date="1407225724000" expanded="false" signature="90941:91003" placeholder="..." />
+            <marker date="1407225724000" expanded="false" signature="91076:91120" placeholder="..." />
+            <marker date="1407225724000" expanded="false" signature="91230:91270" placeholder="..." />
+            <marker date="1407225724000" expanded="false" signature="91357:91367" placeholder="..." />
+            <marker date="1407225724000" expanded="false" signature="92000:92017" placeholder="..." />
+            <marker date="1407225724000" expanded="false" signature="93161:93171" placeholder="..." />
+            <marker date="1407225724000" expanded="false" signature="95245:95262" placeholder="..." />
+            <marker date="1407225724000" expanded="false" signature="175400:175427" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/conf/Config.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="125" column="11" selection-start="4930" selection-end="4930" vertical-scroll-proportion="0.0">
+        <state line="41" column="0" selection-start="2213" selection-end="2213" vertical-scroll-proportion="0.27142859">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/migrations/changelog.groovy">
+    <entry file="file://$PROJECT_DIR$/grails-app/views/calendario/_form.gsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="11" selection-start="98" selection-end="98" vertical-scroll-proportion="0.1461318">
+        <state line="25" column="224" selection-start="1027" selection-end="1235" vertical-scroll-proportion="-4.857143">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-app/js/lang-all.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="538" column="55" selection-start="83539" selection-end="83539" vertical-scroll-proportion="0.23900573">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/calendario/calendario.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="184" column="8" selection-start="5641" selection-end="5641" vertical-scroll-proportion="-9.755102">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/layouts/main.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="6" selection-start="22" selection-end="22" vertical-scroll-proportion="-8.253086">
           <folding />
         </state>
       </provider>
