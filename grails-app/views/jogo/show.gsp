@@ -131,21 +131,29 @@
                                 </tr>
                                 </thead>
                                 <tbody>
-                                 <g:each in="${listaTimeAluno}" var="timeAlunoInstance">
-                                     <tr>
-                                         <td>
-                                             <i class="glyphicon glyphicon-pencil green"></i>
-                                             <i class="glyphicon glyphicon-trash red"></i>
-                                         </td>
-                                         <td>${timeAlunoInstance?.numeroCamisa}</td>
-                                         <td>aluno</td>
-                                         <td>cartao</td>
-                                         <td>falta</td>
-                                         <td>gol</td>
-                                     </tr>
-                                 </g:each>
+                                <tr>
+                                     <td>
+                                         <i class="glyphicon glyphicon-pencil green"></i>
+                                         <i class="glyphicon glyphicon-trash red"></i>
+                                     </td>
+                                     <td>nº camisa</td>
+                                     <td>aluno</td>
+                                     <td>cartao</td>
+                                     <td>falta</td>
+                                     <td>gol</td>
+                                </tr>
 
-
+                                <tr>
+                                    <td>
+                                        <i class="glyphicon glyphicon-pencil green"></i>
+                                        <i class="glyphicon glyphicon-trash red"></i>
+                                    </td>
+                                    <td>nº camisa</td>
+                                    <td>aluno</td>
+                                    <td>cartao</td>
+                                    <td>falta</td>
+                                    <td>gol</td>
+                                </tr>
                                 </tbody>
                             </table>
                         </div>

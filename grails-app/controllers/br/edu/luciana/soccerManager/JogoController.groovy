@@ -112,7 +112,7 @@ class JogoController {
         def timeInstance = Time.get(params.id)
         def listaTimeAluno = TimeAluno.list()
 
-        return [jogoInstance:jogoInstance]
+        return [jogoInstance:jogoInstance, listaTimeAluno:listaTimeAluno]
     }
 
     def adicionarJogoSumula(){

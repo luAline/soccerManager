@@ -42,7 +42,7 @@
                     <div class="box-content">
                         <ul class="thumbnails gallery">
                             <li id="image-1" class="thumbnail">
-                                <img alt="SoccerManager Logo" class="grayscale" style="box-shadow:0 2px 2px #666" src="${resource(dir:'images',file: 'teste1.jpg')}">
+                                <img alt="SoccerManager Logo" class="grayscale" style="box-shadow:0 2px 2px #666" src="${resource(dir:'images',file: 'escola_1.jpg')}">
 
                                 <div class="col-md-12">
                                     <div class="col-md-6" style="text-align: left"> <i class="glyphicon glyphicon-picture"></i> </div>
@@ -52,7 +52,7 @@
                             </li>
 
                             <li id="image-2" class="thumbnail">
-                                <img alt="SoccerManager Logo" class="grayscale" style="box-shadow:0 2px 2px #666" src="${resource(dir:'images',file: 'teste2.jpg')}">
+                                <img alt="SoccerManager Logo" class="grayscale" style="box-shadow:0 2px 2px #666" src="${resource(dir:'images',file: 'escola_2.jpg')}">
 
                                 <div class="col-md-12">
                                     <div class="col-md-6" style="text-align: left"> <i class="glyphicon glyphicon-picture"></i> </div>
@@ -61,7 +61,7 @@
                             </li>
 
                             <li id="image-3" class="thumbnail">
-                                <img alt="SoccerManager Logo" class="grayscale" style="box-shadow:0 2px 2px #666" src="${resource(dir:'images',file: 'teste1.jpg')}">
+                                <img alt="SoccerManager Logo" class="grayscale" style="box-shadow:0 2px 2px #666" src="${resource(dir:'images',file: 'escola_3.jpg')}">
 
                                 <div class="col-md-12">
                                     <div class="col-md-6" style="text-align: left"> <i class="glyphicon glyphicon-picture"></i> </div>
@@ -71,7 +71,7 @@
                             </li>
 
                             <li id="image-4" class="thumbnail">
-                                <img alt="SoccerManager Logo" class="grayscale" style="box-shadow:0 2px 2px #666" src="${resource(dir:'images',file: 'teste2.jpg')}">
+                                <img alt="SoccerManager Logo" class="grayscale" style="box-shadow:0 2px 2px #666" src="${resource(dir:'images',file: 'escola_4.jpg')}">
 
                                 <div class="col-md-12">
                                     <div class="col-md-6" style="text-align: left"> <i class="glyphicon glyphicon-picture"></i> </div>
@@ -80,7 +80,7 @@
                             </li>
 
                             <li id="image-5" class="thumbnail">
-                                <img alt="SoccerManager Logo" class="grayscale" style="box-shadow:0 2px 2px #666" src="${resource(dir:'images',file: 'teste1.jpg')}">
+                                <img alt="SoccerManager Logo" class="grayscale" style="box-shadow:0 2px 2px #666" src="${resource(dir:'images',file: 'escola_5.JPG')}">
 
                                 <div class="col-md-12">
                                     <div class="col-md-6" style="text-align: left"> <i class="glyphicon glyphicon-picture"></i> </div>
@@ -90,7 +90,7 @@
                             </li>
 
                             <li id="image-6" class="thumbnail">
-                                <img alt="SoccerManager Logo" class="grayscale" style="box-shadow:0 2px 2px #666" src="${resource(dir:'images',file: 'teste2.jpg')}">
+                                <img alt="SoccerManager Logo" class="grayscale" style="box-shadow:0 2px 2px #666" src="${resource(dir:'images',file: 'escola_6.JPG')}">
 
                                 <div class="col-md-12">
                                     <div class="col-md-6" style="text-align: left"> <i class="glyphicon glyphicon-picture"></i> </div>
@@ -99,7 +99,7 @@
                             </li>
 
                             <li id="image-7" class="thumbnail">
-                                <img alt="SoccerManager Logo" class="grayscale" style="box-shadow:0 2px 2px #666" src="${resource(dir:'images',file: 'teste1.jpg')}">
+                                <img alt="SoccerManager Logo" class="grayscale" style="box-shadow:0 2px 2px #666" src="${resource(dir:'images',file: 'escola_7.jpg')}">
 
                                 <div class="col-md-12">
                                     <div class="col-md-6" style="text-align: left"> <i class="glyphicon glyphicon-picture"></i> </div>
@@ -109,7 +109,7 @@
                             </li>
 
                             <li id="image-8" class="thumbnail">
-                                <img alt="SoccerManager Logo" class="grayscale" style="box-shadow:0 2px 2px #666" src="${resource(dir:'images',file: 'teste2.jpg')}">
+                                <img alt="SoccerManager Logo" class="grayscale" style="box-shadow:0 2px 2px #666" src="${resource(dir:'images',file: 'escola_8.JPG')}">
 
                                 <div class="col-md-12">
                                     <div class="col-md-6" style="text-align: left"> <i class="glyphicon glyphicon-picture"></i> </div>
@@ -118,7 +118,7 @@
                             </li>
 
                             <li id="image-9" class="thumbnail">
-                                <img alt="SoccerManager Logo" class="grayscale" style="box-shadow:0 2px 2px #666" src="${resource(dir:'images',file: 'teste1.jpg')}">
+                                <img alt="SoccerManager Logo" class="grayscale" style="box-shadow:0 2px 2px #666" src="${resource(dir:'images',file: 'escola_9.JPG')}">
 
                                 <div class="col-md-12">
                                     <div class="col-md-6" style="text-align: left"> <i class="glyphicon glyphicon-picture"></i> </div>
@@ -128,7 +128,7 @@
                             </li>
 
                             <li id="image-10" class="thumbnail">
-                                <img alt="SoccerManager Logo" class="grayscale" style="box-shadow:0 2px 2px #666" src="${resource(dir:'images',file: 'teste2.jpg')}">
+                                <img alt="SoccerManager Logo" class="grayscale" style="box-shadow:0 2px 2px #666" src="${resource(dir:'images',file: 'escola_10.JPG')}">
 
                                 <div class="col-md-12">
                                     <div class="col-md-6" style="text-align: left"> <i class="glyphicon glyphicon-picture"></i> </div>

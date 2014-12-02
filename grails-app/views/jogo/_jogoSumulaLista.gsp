@@ -29,6 +29,22 @@
                     <g:textField name="gol" class="form-control" value=""/>
                 </td>
             </tr>
+        <tr>
+            <td>
+                <i class="glyphicon glyphicon-trash red"></i>
+            </td>
+            <td>num camisa</td>
+            <td>aluno</td>
+            <td>
+                <g:select name="cartao" from="${br.edu.luciana.soccerManager.Cartao.values()}" value=""/>
+            </td>
+            <td>
+                <g:textField name="falta" class="form-control" value=""/>
+            </td>
+            <td>
+                <g:textField name="gol" class="form-control" value=""/>
+            </td>
+        </tr>
 
         </tbody>
     </table>

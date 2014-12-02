@@ -27,7 +27,7 @@
             </g:link>
             <g:link controller="jogo" action="show" id="${params.id}">
                 <button class="btn btn-default">
-                    <i class="glyphicon glyphicon-list icon-white"></i>
+                    <i class="glyphicon glyphicon-arrow-left icon-white"></i>
                     <g:message code="soccerManager.voltar" args="[entityName]" />
                 </button>
             </g:link>
