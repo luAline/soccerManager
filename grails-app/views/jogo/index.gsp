@@ -62,9 +62,6 @@
                         </g:each>
                         </tbody>
                     </table>
-                    <div class="pagination">
-                        <g:paginate total="${jogoInstanceCount ?: 0}" />
-                    </div>
                 </div>
             </div>
         </div>

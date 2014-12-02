@@ -60,9 +60,6 @@
                         </g:each>
                         </tbody>
                     </table>
-                    <div class="pagination">
-                        <g:paginate total="${empresaInstanceCount ?: 0}" />
-                    </div>
                 </div>
             </div>
         </div>

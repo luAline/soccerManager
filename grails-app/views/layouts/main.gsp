@@ -10,13 +10,23 @@
 
         <!-- CSS -->
         <link rel="stylesheet" href="${resource(dir: 'css', file: 'charisma-app.css')}" type="text/css">
-
-        <link rel="stylesheet" href="${resource(dir: 'css', file: 'animate.min.css')}" type="text/css">
-        <link rel="stylesheet" href="${resource(dir: 'css', file: 'app.css')}" type="text/css">
         <link rel="stylesheet" href="${resource(dir: 'css', file: 'bootstrap.css')}" type="text/css">
         <link rel="stylesheet" href="${resource(dir: 'css', file: 'bootstrap.css.map')}" type="text/css">
         <link rel="stylesheet" href="${resource(dir: 'css', file: 'bootstrap.min.css')}" type="text/css">
+        <link rel="stylesheet" href="${resource(dir: 'css', file: 'bootstrap-theme.css')}" type="text/css">
+        <link rel="stylesheet" href="${resource(dir: 'css', file: 'bootstrap-theme.css.map')}" type="text/css">
+        <link rel="stylesheet" href="${resource(dir: 'css', file: 'bootstrap-theme.min.css')}" type="text/css">
+
+        <link rel="stylesheet" href="${resource(dir: 'css', file: 'animate.min.css')}" type="text/css">
         <link rel="stylesheet" href="${resource(dir: 'css', file: 'bootstrap-cerulean.min.css')}" type="text/css">
+
+
+
+        <link rel="stylesheet" href="${resource(dir: 'css', file: 'app.css')}" type="text/css">
+
+
+
+
         <link rel="stylesheet" href="${resource(dir: 'css', file: 'charisma-app.css')}" type="text/css">
         <link rel="stylesheet" href="${resource(dir: 'css', file: 'chosen.css')}" type="text/css">
         <link rel="stylesheet" href="${resource(dir: 'css', file: 'chosen.min.css')}" type="text/css">
@@ -37,23 +47,23 @@
         <link rel="stylesheet" href="${resource(dir: 'css', file: 'orbit.css')}" type="text/css">
         <link rel="stylesheet" href="${resource(dir: 'css', file: 'responsive-tables.css')}" type="text/css">
         <link rel="stylesheet" href="${resource(dir: 'css', file: 'typography.css')}" type="text/css">
+        <link rel="stylesheet" href="${resource(dir: 'css', file: 'jquery.tooltip.css')}" type="text/css">
         <link rel="stylesheet" href="${resource(dir: 'css', file: 'ui.css')}" type="text/css">
         <link rel="stylesheet" href="${resource(dir: 'css', file: 'uploadify.css')}" type="text/css">
 
-        <!-- JS
 
-        <script src="${resource(dir: 'js', file: 'jquery-migrate.min.js')}" type="text/javascript"></script>
-        -->
-        <script src="${resource(dir: 'js', file: 'jquery.min.js')}" type="text/javascript"></script>
-
-        <script src="${resource(dir: 'js', file: 'jquery-1.11.1.min.js')}" type="text/javascript"></script>
-        <script src="${resource(dir: 'js', file: 'bootstrap.js')}" type="text/javascript"></script>
-        <script src="${resource(dir: 'js', file: 'bootstrap.min.js')}" type="text/javascript"></script>
+        <!-- JS -->
         <script src="${resource(dir: 'js', file: 'charisma.js')}" type="text/javascript"></script>
         <script src="${resource(dir: 'js', file: 'jquery.js')}" type="text/javascript"></script>
-        <script src="${resource(dir: 'js', file: 'jquery-migrate.js')}" type="text/javascript"></script>
-        <script src="${resource(dir: 'js', file: 'tooltip.js')}" type="text/javascript"></script>
+        <script src="${resource(dir: 'js', file: 'jquery-1.11.1.min.js')}" type="text/javascript"></script>
+        <script src="${resource(dir: 'js', file: 'jquery.min.js')}" type="text/javascript"></script>
+        <script src="${resource(dir: 'js', file: 'jquery.min.map')}" type="text/javascript"></script>
 
+        <script src="${resource(dir: 'js', file: 'bootstrap.js')}" type="text/javascript"></script>
+        <script src="${resource(dir: 'js', file: 'bootstrap.min.js')}" type="text/javascript"></script>
+        <script src="${resource(dir: 'js', file: 'jquery-migrate.js')}" type="text/javascript"></script>
+        <script src="${resource(dir: 'js', file: 'jquery.tooltip.js')}" type="text/javascript"></script>
+        <script src="${resource(dir: 'js', file: 'tooltip.js')}" type="text/javascript"></script>
         <script src="${resource(dir: 'js', file: 'affix.js')}" type="text/javascript"></script>
         <script src="${resource(dir: 'js', file: 'app.js')}" type="text/javascript"></script>
         <script src="${resource(dir: 'js', file: 'application.js')}" type="text/javascript"></script>
@@ -79,6 +89,8 @@
         <script src="${resource(dir: 'js', file: 'popover.js')}" type="text/javascript"></script>
         <script src="${resource(dir: 'js', file: 'responsive-tables.js')}" type="text/javascript"></script>
         <script src="${resource(dir: 'js', file: 'transition.js')}" type="text/javascript"></script>
+
+
         <script src="${resource(dir: 'js', file: 'lang-all.js')}" type="text/javascript"></script>
 
 
@@ -90,11 +102,11 @@
 
         <g:if test="${session.usuario}">
 
-        <div class="navbar navbar-default" role="navigation">
+        <nav class="navbar navbar-default" role="navigation">
 
             <div class="navbar-inner">
-                <button type="button" class="navbar-toggle pull-left animated flip">
-                    <span class="sr-only">Toggle navigation</span>
+                <button type="button" class="navbar-toggle collapsed pull-left animated flip" onclick="alert('cliquei')" data-target="#menuLateral">
+                    <span class="sr-only">Menu Navegação</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
@@ -115,7 +127,7 @@
                     </ul>
                 </div>
             </div>
-        </div>
+        </nav>
 
         </g:if>
 
@@ -133,7 +145,9 @@
                             <div class="nav-sm nav nav-stacked">
 
                             </div>
-                            <ul class="nav nav-pills nav-stacked main-menu">
+
+
+                            <ul class="nav nav-pills nav-stacked main-menu" id="menuLateral">
                                 <li class="nav-header" style="text-align: center"><g:link url="[action: 'telaInicio', controller: 'menu']"> <g:message code="soccerManager.menu"/></g:link> </li>
 
                                 <li class="nav-header hidden-md"><g:message code="soccerManager.cadastro"/> </li>

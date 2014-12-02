@@ -61,9 +61,6 @@
                         </tbody>
                     </table>
 
-                    <ul class="pagination pagination-centered">
-                        <g:paginate total="${paisInstanceCount ?: 0}" />
-                    </ul>
                 </div>
             </div>
         </div>

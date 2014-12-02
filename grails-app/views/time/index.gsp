@@ -58,9 +58,6 @@
                         </g:each>
                         </tbody>
                     </table>
-                    <div class="pagination">
-                        <g:paginate total="${timeInstanceCount ?: 0}" />
-                    </div>
                 </div>
             </div>
         </div>
