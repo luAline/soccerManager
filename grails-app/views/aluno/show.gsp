@@ -255,19 +255,19 @@
                                         <g:if test="${alunoInstance?.imc < 17}">
                                             <p>Abaixo de 17 - Muito abaixo do peso</p>
                                         </g:if>
-                                        <g:elseif test="${(alunoInstance?.imc >= 17)&&(alunoInstance?.imc <= 18.49)}">
+                                        <g:elseif test="${(alunoInstance?.imc >= 17)&&(alunoInstance?.imc <= 18.499)}">
                                             <p>Entre 17 e 18,49 - Abaixo do peso</p>
                                         </g:elseif>
-                                        <g:elseif test="${(alunoInstance?.imc >= 18.50)&&(alunoInstance?.imc <= 24.99)}">
+                                        <g:elseif test="${(alunoInstance?.imc >= 18.500)&&(alunoInstance?.imc <= 24.999)}">
                                             <p>Entre 18,5 e 24,99 - Peso normal</p>
                                         </g:elseif>
-                                        <g:elseif test="${(alunoInstance?.imc >= 25.00)&&(alunoInstance?.imc <= 29.99)}">
+                                        <g:elseif test="${(alunoInstance?.imc >= 25.000)&&(alunoInstance?.imc <= 29.999)}">
                                             <p>Entre 25 e 29,99 - Acima do peso</p>
                                         </g:elseif>
-                                        <g:elseif test="${(alunoInstance?.imc >= 30.00)&&(alunoInstance?.imc <= 34.99)}">
+                                        <g:elseif test="${(alunoInstance?.imc >= 30.000)&&(alunoInstance?.imc <= 34.999)}">
                                             <p>Entre 30 e 34,99 - Obesidade I</p>
                                         </g:elseif>
-                                        <g:elseif test="${(alunoInstance?.imc >= 35.00)&&(alunoInstance?.imc <= 39.99)}">
+                                        <g:elseif test="${(alunoInstance?.imc >= 35.000)&&(alunoInstance?.imc <= 39.99)}">
                                             <p>Entre 35 e 39,99 - Obesidade II (severa) </p>
                                         </g:elseif>
                                         <g:else test="${alunoInstance?.imc > 40.00}">

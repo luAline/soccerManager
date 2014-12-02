@@ -34,12 +34,24 @@ class Funcionario {
         nome = s?.toUpperCase()
     }
 
-    String setBanco( String s ){
-        banco = s?.toUpperCase()
+    String setLogradouro( String s ){
+        logradouro = s?.toUpperCase()
+    }
+
+    String setComplemento( String s ){
+        complemento = s?.toUpperCase()
+    }
+
+    String setBairro( String s ){
+        bairro = s?.toUpperCase()
     }
 
     String setObservacao( String s ){
         observacao = s?.toUpperCase()
+    }
+
+    String setBanco( String s ){
+        banco = s?.toUpperCase()
     }
 
     String getDataNascimentoString(){new SimpleDateFormat("dd/MM/yyyy").format(dataNascimento)}

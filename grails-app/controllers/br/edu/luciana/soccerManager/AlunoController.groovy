@@ -112,8 +112,9 @@ class AlunoController {
 
         def alunoInstance = Aluno.get(params.id)
         def alunoMensalidadeInstance =  AlunoMensalidade.get(params.alunoMensalidade)
-        def listaAlunoMensalidade = AlunoMensalidade.list()
+        def listaAlunoMensalidade = AlunoMensalidade.findAll("from AlunoMensalidade a where a.aluno ="+alunoInstance?.id)
 
+        println("lista: "+listaAlunoMensalidade)
         return [alunoInstance: alunoInstance, alunoMensalidadeInstance: alunoMensalidadeInstance, listaAlunoMensalidade:listaAlunoMensalidade]
     }
 
@@ -122,6 +123,7 @@ class AlunoController {
         println("pagarMensalidade: "+params)
         def alunoInstance = Aluno.get(params.aluno)
         def alunoMensalidadeInstance = AlunoMensalidade.findAllByAluno(alunoInstance)
+
 
         alunoMensalidadeInstance = new AlunoMensalidade(aluno: alunoInstance, valor: params.valor, dataPagamento: params.dataPagamento, observacao: params.observacao.toString())
         alunoMensalidadeInstance.save(flush: true)
@@ -146,7 +148,7 @@ class AlunoController {
         def alunoHistoricoInstance = AlunoHistorico.get(params.alunoHistorico)
         def listaHistorico = AlunoHistorico.list()
 
-        return [alunoInstance: alunoInstance, alunoHistoricoInstance: alunoHistoricoInstance]
+        return [alunoInstance: alunoInstance, alunoHistoricoInstance: alunoHistoricoInstance, listaHistorico:listaHistorico]
 
     }
 
@@ -154,9 +156,9 @@ class AlunoController {
     def adicionarHistorico(){
         println("adicionarHistorico: "+params)
         def alunoInstance = Aluno.get(params.id)
-        def alunoHistoricoInstance = AlunoHistorico.findAllByAluno(alunoInstance)
+        def alunoHistoricoInstance = AlunoHistorico.findByAluno(alunoInstance)
 
-        alunoHistoricoInstance = new AlunoHistorico(aluno:alunoInstance, dataAnotacao: params.dataAnotacao, anotacao: params.anotacao.toString())
+        alunoHistoricoInstance = new AlunoHistorico(aluno:alunoInstance, dataAnotacao: params.dataAnotacao, anotacao: params.anotacao)
         alunoHistoricoInstance.save(flush: true)
         flash.message = "Anotação gravada."
         redirect(action: "historico", id: params.aluno)

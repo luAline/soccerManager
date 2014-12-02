@@ -16,7 +16,10 @@ class JogoController {
     }
 
     def show(Jogo jogoInstance) {
-        respond jogoInstance
+
+
+        println("lista: "+listaTimeAluno)
+        return [jogoInstance:jogoInstance, listaTimeAluno:listaTimeAluno]
     }
 
     def create() {
@@ -106,6 +109,8 @@ class JogoController {
 
     def jogoSumula(){
         def jogoInstance = Jogo.get(params.id)
+        def timeInstance = Time.get(params.id)
+        def listaTimeAluno = TimeAluno.list()
 
         return [jogoInstance:jogoInstance]
     }

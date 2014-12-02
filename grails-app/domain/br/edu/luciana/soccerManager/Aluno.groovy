@@ -67,6 +67,10 @@ class Aluno {
         deficiencia = s?.toUpperCase()
     }
 
+    String setObservacao( String s ){
+        observacao = s?.toUpperCase()
+    }
+
     String setLogradouro( String s ){
         logradouro = s?.toUpperCase()
     }

@@ -116,6 +116,39 @@
                             </g:form>
                         </div>
                     </div>
+                    <div class="box-content">
+                        <!-- quando for no SHOW -->
+                        <div class="box-content">
+                            <table class="table table-bordered table-striped table-condensed">
+                                <thead>
+                                <tr>
+                                    <th><g:message code="soccerManager.acao"/> </th>
+                                    <th><g:message code="time.numCamisa"/></th>
+                                    <th><g:message code="aluno.label"/></th>
+                                    <th><g:message code="jogo.cartao"/></th>
+                                    <th><g:message code="jogo.falta"/></th>
+                                    <th><g:message code="jogo.gol"/></th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                 <g:each in="${listaTimeAluno}" var="timeAlunoInstance">
+                                     <tr>
+                                         <td>
+                                             <i class="glyphicon glyphicon-pencil green"></i>
+                                             <i class="glyphicon glyphicon-trash red"></i>
+                                         </td>
+                                         <td>${timeAlunoInstance?.numeroCamisa}</td>
+                                         <td>aluno</td>
+                                         <td>cartao</td>
+                                         <td>falta</td>
+                                         <td>gol</td>
+                                     </tr>
+                                 </g:each>
+
+
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                 </div>
             </div>

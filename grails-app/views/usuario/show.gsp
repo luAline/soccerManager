@@ -189,7 +189,7 @@
                                     <g:message code="usuario.label" default="Usuário" />
 
                                 </label>
-                                <g:checkBox name="usuario" disabled="true" value="true" />
+                                <g:checkBox name="usuario" disabled="true" value="false" />
                             </div>
 
                             <div class="form-group col-md-2">

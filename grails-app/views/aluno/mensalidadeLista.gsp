@@ -130,12 +130,14 @@
                             </thead>
                             <tbody>
                             <g:each in="${listaAlunoMensalidade}" var="alunoMensalidadeInstance">
+                                <g:if test="${alunoMensalidadeInstance.aluno.id == alunoInstance.id}">
                             <tr>
                                 <td><g:link action="excluirPagamento" id="${alunoMensalidadeInstance.id}"><i class="glyphicon glyphicon-trash red"></i></g:link></td>
                                 <td>${alunoMensalidadeInstance?.dataPagamentoString}</td>
                                 <td>${formatNumber(type: 'currency', number: alunoMensalidadeInstance?.valor)}</td>
                                 <td>${alunoMensalidadeInstance?.observacao}</td>
                             </tr>
+                                </g:if>
                             </g:each>
                             </tbody>
                         </table>

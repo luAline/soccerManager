@@ -41,7 +41,6 @@
                     </div>
                     <g:form action="adicionarHistorico" method="POST">
 
-                        <g:hiddenField name="aluno" value="${alunoInstance?.id}"/>
                         <g:hiddenField name="alunoHistorico" value="${alunoHistoricoInstance?.id}"/>
                         <div class="row">
                             <div class="box-content">
@@ -63,26 +62,26 @@
                         </div>
 
                         <div class="box-content center">
-                            <button type="submit" class="btn btn-info">
+                            <button type="button" class="btn btn-info">
                                 <i class="glyphicon glyphicon-plus icon-white"></i>
                                 <g:message code="soccerManager.add" />
                             </button>
                         </div>
                     </g:form>
-                    <h4>Lista Anotações</h4>
-                    <div class="box-content">
-                        <table class="table table-bordered table-striped table-condensed" id="listaHistorico">
-                            <thead>
-                            <tr>
-                                <th><g:message code="soccerManager.acao"/></th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            <tr>
-                                <td>excluir</td>
-                            </tr>
-                            </tbody>
-                        </table>
+
+                    <div class="row">
+                        <div class="box-content">
+                            <g:each in="${listaHistorico}" var="alunoHistoricoInstance">
+                                <div class="form-group col-md-12">
+                                    <div class="well">
+                                        <h5 style="text-align: center">${alunoHistoricoInstance?.dataAnotacaoString}</h5>
+                                        <p>${alunoHistoricoInstance?.anotacao}</p>
+                                    </div>
+                                </div>
+                            </g:each>
+
+                        </div>
+
                     </div>
                 </div>
             </div>
