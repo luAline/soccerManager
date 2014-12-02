@@ -19,9 +19,9 @@ class Aluno {
     double valorMensalidade
     int vencimentoMensalidade
     Date dataCadastro
-    double altura
-    double peso
-    double imc
+    double altura = 0.00
+    double peso = 0.00
+    double imc = 0.00
     String pressaoArterial
     String alergia
     String deficiencia
@@ -37,6 +37,10 @@ class Aluno {
 
     def getListaMensalidades(){
         AlunoMensalidade.findAllByAluno(this)
+    }
+
+    def getListaHistorico(){
+        AlunoHistorico.findAllByAluno(this)
     }
 
     String toString(){

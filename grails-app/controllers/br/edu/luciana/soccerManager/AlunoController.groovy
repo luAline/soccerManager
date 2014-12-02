@@ -15,8 +15,12 @@ class AlunoController {
         respond Aluno.list(params), model:[alunoInstanceCount: Aluno.count()]
     }
 
+
     def show(Aluno alunoInstance) {
-        respond alunoInstance
+        def resultado = (alunoInstance?.altura * alunoInstance?.altura)
+        alunoInstance?.imc = (alunoInstance?.peso / resultado )
+
+        return [alunoInstance: alunoInstance]
     }
 
     def create() {
@@ -106,10 +110,58 @@ class AlunoController {
 
     def mensalidadeLista(){
 
+        def alunoInstance = Aluno.get(params.id)
+        def alunoMensalidadeInstance =  AlunoMensalidade.get(params.alunoMensalidade)
+        def listaAlunoMensalidade = AlunoMensalidade.list()
+
+        return [alunoInstance: alunoInstance, alunoMensalidadeInstance: alunoMensalidadeInstance, listaAlunoMensalidade:listaAlunoMensalidade]
+    }
+
+    @Transactional
+    def pagarMensalidade(){
+        println("pagarMensalidade: "+params)
+        def alunoInstance = Aluno.get(params.aluno)
+        def alunoMensalidadeInstance = AlunoMensalidade.findAllByAluno(alunoInstance)
+
+        alunoMensalidadeInstance = new AlunoMensalidade(aluno: alunoInstance, valor: params.valor, dataPagamento: params.dataPagamento, observacao: params.observacao.toString())
+        alunoMensalidadeInstance.save(flush: true)
+        flash.message = "Pagamento incluído"
+        redirect(action: "mensalidadeLista", id: params.aluno)
+
+        return[alunoMensalidadeInstance: alunoMensalidadeInstance]
+
+    }
+
+    @Transactional
+    def excluirPagamento(){
+        def alunoMensalidadeInstance = AlunoMensalidade.get(params.id)
+        Integer idAluno = alunoMensalidadeInstance?.aluno?.id
+        alunoMensalidadeInstance.delete(flush: true)
+        flash.message = "Pagamento excluido"
+        redirect(action: "mensalidadeLista", id: idAluno)
     }
 
     def historico(){
+        def alunoInstance = Aluno.get(params.id)
+        def alunoHistoricoInstance = AlunoHistorico.get(params.alunoHistorico)
+        def listaHistorico = AlunoHistorico.list()
 
+        return [alunoInstance: alunoInstance, alunoHistoricoInstance: alunoHistoricoInstance]
+
+    }
+
+    @Transactional
+    def adicionarHistorico(){
+        println("adicionarHistorico: "+params)
+        def alunoInstance = Aluno.get(params.id)
+        def alunoHistoricoInstance = AlunoHistorico.findAllByAluno(alunoInstance)
+
+        alunoHistoricoInstance = new AlunoHistorico(aluno:alunoInstance, dataAnotacao: params.dataAnotacao, anotacao: params.anotacao.toString())
+        alunoHistoricoInstance.save(flush: true)
+        flash.message = "Anotação gravada."
+        redirect(action: "historico", id: params.aluno)
+
+        return [alunoHistoricoInstance:alunoHistoricoInstance]
     }
 
     def jogos(){

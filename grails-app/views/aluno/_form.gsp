@@ -155,7 +155,7 @@
                 </label>
                 <g:textField name="peso" class="form-control" value="${fieldValue(bean: alunoInstance, field: 'peso')}" required=""/>
             </div>
-            <div class="form-group col-md-2">
+            <div class="form-group col-md-2 hidden">
                 <label for="imc">
                     <g:message code="aluno.imc" default="Imc" />
                     <span class="required-indicator">*</span>

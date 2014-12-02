@@ -34,16 +34,16 @@
                 </button>
             </g:link>
 
-            <g:link controller="aluno" action="mensalidadeLista">
+            <g:link controller="aluno" action="mensalidadeLista" id="${alunoInstance?.id}">
                 <button class="btn btn-default">
-                    <i class="glyphicon glyphicon-list icon-white"></i>
+                    <i class="glyphicon glyphicon-usd icon-white"></i>
                     <g:message code="aluno.mensalidade" args="[entityName]" />
                 </button>
             </g:link>
 
-            <g:link controller="aluno" action="historico">
+            <g:link controller="aluno" action="historico" id="${alunoInstance?.id}">
                 <button class="btn btn-default">
-                    <i class="glyphicon glyphicon-list icon-white"></i>
+                    <i class="glyphicon glyphicon-edit icon-white"></i>
                     <g:message code="aluno.historico" args="[entityName]" />
                 </button>
             </g:link>
@@ -214,6 +214,7 @@
                                 <g:textField name="vencimentoMensalidade" class="form-control" readonly="true" value="${alunoInstance?.vencimentoMensalidade}"/>
                             </div>
                         </div>
+
                     </div>
                     <hr>
                     <div class="row">
@@ -245,6 +246,35 @@
 
                                 </label>
                                 <g:textField name="pressaoArterial" class="form-control" readonly="true" value="${alunoInstance?.pressaoArterial}"/>
+                            </div>
+
+
+                            <div class="box-content">
+                                <div class="form-group col-md-12">
+                                    <div class="well">
+                                        <g:if test="${alunoInstance?.imc < 17}">
+                                            <p>Abaixo de 17 - Muito abaixo do peso</p>
+                                        </g:if>
+                                        <g:elseif test="${(alunoInstance?.imc >= 17)&&(alunoInstance?.imc <= 18.49)}">
+                                            <p>Entre 17 e 18,49 - Abaixo do peso</p>
+                                        </g:elseif>
+                                        <g:elseif test="${(alunoInstance?.imc >= 18.50)&&(alunoInstance?.imc <= 24.99)}">
+                                            <p>Entre 18,5 e 24,99 - Peso normal</p>
+                                        </g:elseif>
+                                        <g:elseif test="${(alunoInstance?.imc >= 25.00)&&(alunoInstance?.imc <= 29.99)}">
+                                            <p>Entre 25 e 29,99 - Acima do peso</p>
+                                        </g:elseif>
+                                        <g:elseif test="${(alunoInstance?.imc >= 30.00)&&(alunoInstance?.imc <= 34.99)}">
+                                            <p>Entre 30 e 34,99 - Obesidade I</p>
+                                        </g:elseif>
+                                        <g:elseif test="${(alunoInstance?.imc >= 35.00)&&(alunoInstance?.imc <= 39.99)}">
+                                            <p>Entre 35 e 39,99 - Obesidade II (severa) </p>
+                                        </g:elseif>
+                                        <g:else test="${alunoInstance?.imc > 40.00}">
+                                            <p>Acima de 40 - Obesidade III (mórbida)</p>
+                                        </g:else>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>

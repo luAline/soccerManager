@@ -62,7 +62,7 @@
                     <div class="row">
                         <div class="box-content">
                             <div class="form-group col-md-2">
-                                <label for="categoria${timeAlunoInstance?.aluno?.id}">
+                                <label for="categoria">
                                     <g:message code="categoria.label" default="Categoria" />
                                     <span class="required-indicator">*</span>
                                 </label>
